@@ -3,6 +3,9 @@
 # if n <= 1:
 # return n
 # return fibonacci(n-1) + fibonacci(n-2)
+# run it:
+#  * https://www.students.cs.ubc.ca/~cs-313/simulator/?arch=y86&impl=seq
+#  * https://www.eecs.yorku.ca/~jonatan/simulator/?arch=y86&impl=seq
 
 .pos 0
 main:
