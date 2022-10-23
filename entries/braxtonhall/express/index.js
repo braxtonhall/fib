@@ -1,22 +1,26 @@
-import { get } from "axios";
+import axios from "axios";
 import express from "express";
+
+const PORT = 3000;
 
 const app = express();
 
-const getURL = (n) => `/fib?${new URLSearchParams({n})}`;
+const {get} = axios.create({baseURL: `http://localhost:${PORT}`});
 
-app.get("/fib", async (res, req, next) => {
-	const {n} = req.params;
-	if (n <= 0) {
-		res.send(n).status(200);
+const getFib = (n) => get("/fib", {params: {n}}).then(({data}) => data);
+
+app.get("/fib", async (req, res, next) => {
+	const n = Number(req.query.n);
+
+	if (!isFinite(n) || n < 0) {
+		res.status(400).json("`n` must be a natural number");
+	} else if (n <= 1) {
+		res.status(200).json(n);
 	} else {
-		const futures = [get(getURL(n - 1)), get(getURL(n - 2))];
-		const [nSub1, nSub2] = await Promise.all(futures);
-		res.send(nSub1 + nSub2).status(200);
+		const [nSub1, nSub2] = await Promise.all([getFib(n - 1), getFib(n - 2)]);
+		res.status(200).json(nSub1 + nSub2);
 	}
 	return next();
 });
 
-app.start();
-
-// TODO... is this syntax correct???
+app.listen(PORT);
