@@ -15,6 +15,9 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 <!-- - `smt` compiles to SMT, and the solver gives you the fib sequence -->
 <!-- - `imperitive-church` imperitive implementation in the lambda calculus -->
 
+### [`jyoo980`](https://github.com/jyoo980)
+- [`scala`](./entries/jyoo980/scala/Fib.scala)
+
 ### [`Metroxe`](https://github.com/Metroxe)
 - [`html`](./entries/Metroxe/index.html)
 
