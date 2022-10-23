@@ -23,7 +23,7 @@
     const n1 = s.substring(i1 + 1);
     const n2 = i2 === -1 ? s.substring(0, i1 - 1) : s.substring(i2 + 1, i1);
     const v = Number(n1) + Number(n2);
-    const output = `${s},${Number(n1) + Number(n2)}`;
+    const output = `${s},${v}`;
     document.getElementById("sequence").innerText = output;
 
     const next = document.getElementById("next");
