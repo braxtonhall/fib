@@ -25,7 +25,7 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 ### [`jyoo980`](https://github.com/jyoo980)
 - [`scala`](./entries/jyoo980/scala/Fib.scala)
 
-## [`margoseltzer`](https://github.com/margoseltzer)
+### [`margoseltzer`](https://github.com/margoseltzer)
 - [`efficiency`](./entries/margoseltzer/efficiency.c)
 
 ### [`Metroxe`](https://github.com/Metroxe)
