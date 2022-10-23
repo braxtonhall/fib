@@ -1,5 +1,8 @@
 # fib
 
+## [`adirar111`](https://github.com/adirar111)
+- [`y86`](./entries/adirar111/y86/fib.ys)
+
 ## [`braxtonhall`](https://github.com/braxtonhall)
 - [`adam`](./entries/braxtonhall/adam/main.py) (WIP)
 - [`express`](./entries/braxtonhall/express/index.js)
