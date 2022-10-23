@@ -10,3 +10,6 @@
 - [`types`](./entries/braxtonhall/types/index.ts)
 <!-- - `smt` compiles to SMT, and the solver gives you the fib sequence -->
 <!-- - `imperitive-church` imperitive implementation in the lambda calculus -->
+
+## [`Metroxe`](https://github.com/Metroxe)
+- [`html`](./entries/Metroxe/index.html)
