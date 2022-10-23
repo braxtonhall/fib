@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fib.html</title>
+    <style>
+        #sequence {
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<a id="next">Next Term</a>
+<a href=".">Reset</a>
+<hr/>
+<code id="sequence"></code>
+
+<script>
+
+    const s = new URLSearchParams(window.location.search).get("s") ?? "0,1";
+    const i1 = s.lastIndexOf(",");
+    const i2 = s.lastIndexOf(",", i1 - 1);
+    const n1 = s.substring(i1 + 1);
+    const n2 = i2 === -1 ? s.substring(0, i1 - 1) : s.substring(i2 + 1, i1);
+    const v = Number(n1) + Number(n2);
+    const output = `${s},${Number(n1) + Number(n2)}`;
+    document.getElementById("sequence").innerText = output;
+
+    const next = document.getElementById("next");
+    if (v > Number.MAX_SAFE_INTEGER) {
+        next.remove();
+        alert(`Sorry the term is past max safe integer (${Number.MAX_SAFE_INTEGER}), can't calculate.`);
+    } else {
+        next.href = `${window.location.pathname}?s=${output}`
+    }
+
+</script>
+</body>
+</html>
