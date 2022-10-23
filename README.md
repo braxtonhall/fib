@@ -1,5 +1,9 @@
 # fib
 
+Can you please give me a Fibonacci function? Ideally (but not necessarily) one that only you would give me.
+
+For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art Gallery](https://www.instagram.com/hatch_artgallery).
+
 ### [`adirar111`](https://github.com/adirar111)
 - [`y86`](./entries/adirar111/y86/fib.ys)
 
