@@ -32,5 +32,3 @@ fib2 = refl
 
 fib8 : fib 8 ≡ 21
 fib8 = refl
-
-
