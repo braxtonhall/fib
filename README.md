@@ -17,6 +17,7 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 
 ### [`funemy`](https://github.com/funemy)
 - [`agda`](./entries/funemy/agda/fib1.agda)
+- [`z3`](./entries/funemy/z3/z3fib.sh)
 
 ### [`jyoo980`](https://github.com/jyoo980)
 - [`scala`](./entries/jyoo980/scala/Fib.scala)
