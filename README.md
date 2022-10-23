@@ -15,6 +15,9 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 <!-- - `smt` compiles to SMT, and the solver gives you the fib sequence -->
 <!-- - `imperitive-church` imperitive implementation in the lambda calculus -->
 
+### [`ionathanch`](https://github.com/ionathanch)
+- [`agda`](./entries/ionathanch/agda/Fib.agda)
+
 ### [`funemy`](https://github.com/funemy)
 - [`agda`](./entries/funemy/agda/fib1.agda)
 - [`z3`](./entries/funemy/z3/z3fib.sh)
