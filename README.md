@@ -31,11 +31,14 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 ### [`Metroxe`](https://github.com/Metroxe)
 - [`html`](./entries/Metroxe/index.html)
 
+### [`shayanh`](https://github.com/shayanh)
+- [`matrix`](./entries/shayanh/matrix.go)
+
 ### [`Tarcisio-Teixeira`](https://github.com/Tarcisio-Teixeira)
 - [`logn?`](./entries/Tarcisio-Teixeira/fib.py)
 
-### [`shayanh`](https://github.com/shayanh)
-- [`matrix`](./entries/shayanh/matrix.go)
+### [`wilbowma`](https://github.com/wilbowma)
+- [`fib-lang`](https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3)
 
 ## Contributing
 To contribute just make a PR into the `main` branch!
