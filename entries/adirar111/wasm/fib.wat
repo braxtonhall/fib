@@ -1,5 +1,5 @@
 ;; iterative fib(n) in web assembly text format (wat)
-;; this gets compiled to fib.wasm binary
+;; this gets compiled to the fib.wasm binary
 ;; and gets fetched via a data URL in index.js
 (module
 	(export "fib" (func $fib))
