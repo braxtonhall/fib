@@ -130,6 +130,14 @@
             {
                 "name": "fib-java",
                 "link": "./entries/nritschel/fib-java/src"
+            },
+            {
+                "name": "xlsx",
+                "link": "./entries/nritschel/xlsx/fib.xlsx"
+            },
+            {
+                "name": "scratch",
+                "link": "./entries/nritschel/scratch"
             }
         ]
     },
