@@ -164,6 +164,17 @@
         ]
     },
     {
+        "github": "rxg",
+        "name": "Ronald Garcia",
+        "title": "Associate Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "fib-iter*",
+                "link": "./entries/rxg/fib.rkt"
+            }
+        ]
+    },
+    {
         "github": "shayanh",
         "name": "Shayan Hosseini",
         "title": "MSc Student, UBC",
