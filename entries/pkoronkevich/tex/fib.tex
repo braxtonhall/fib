@@ -11,6 +11,7 @@
 \newcommand{\plus}{\lambda m . \lambda n . m \ (\suc) \ n}
 \newcommand{\pred}{\lambda n . \lambda f . \lambda x . n \ (\lambda g . \lambda h . h \ (g \ f)) \ (\lambda u . x) \ (\lambda u . u)}
 \newcommand{\sub}{\lambda m . \lambda n . n \ (\pred) \ m}
+\newcommand{\lleq}{\lambda m . \lambda n . \\ \qquad \isz \ ((\sub) \\ \qquad \ m \ n)}
 \newcommand{\fix}{\lambda g . (\lambda x . g \ (x \ x)) \ (\lambda x . g \ (x \ x))}
 \newcommand{\appo}[2]{#1 \ #2}
 \newcommand{\appt}[3]{#1 \ #2 \ #3}
@@ -19,7 +20,7 @@
 \begin{gather*}
   \fix \\                                   % recursive function application
   \quad \lambda r . \lambda n . (\ife) \\   % of fib, which takes itself and n, if expression
-  \quad \ \appo{(\isz)}{n} \\               % is n zero
+  \quad \ \appt{(\lleq)}{n}{\one} \\        % if n less than or equal to one
   \quad \ (\one) \\                         % if so, return 1
   \quad \ (\plus) \\                        % if not, add 
   \qquad \appo{r}{(\appo{(\pred)}{n})} \\   % the first recursive call, n - 1, to
