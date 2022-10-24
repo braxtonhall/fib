@@ -6,17 +6,17 @@
   --next: 1;
 }
 
-.copyPrev {
+.copyPrevToTmpVars {
   --tmp-prev: var(--prev);
   --tmp-next: var(--next);
 }
 
-.sumPrevious {
+.setVarsToSumOfTmps {
   --prev: var(--tmp-next);
   --next: calc(var(--tmp-prev) + var(--tmp-next));
 }
 
-.sumPrevious::before {
+.setVarsToSumOfTmps::before {
   counter-set: fib var(--prev);
   content: counter(fib);
 }
@@ -31,37 +31,37 @@
 
     <div class="initialize">
   
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
 
-    <div class="copyPrev">
-    <div class="sumPrevious">
+    <div class="copyPrevToTmpVars">
+    <div class="setVarsToSumOfTmps">
   </body>
 </html>
