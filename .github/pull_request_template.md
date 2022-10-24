@@ -1,0 +1,1 @@
+- [ ] I added myself to [`people.json`](./people.json)!
