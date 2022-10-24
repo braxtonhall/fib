@@ -4,6 +4,8 @@ Can you please give me a Fibonacci function? Ideally (but not necessarily) one t
 
 For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art Gallery](https://www.instagram.com/hatch_artgallery).
 
+[See the contributors here](https://braxtonhall.ca/fib)
+
 ## Contributing
 To contribute just make a PR into the `main` branch!
 

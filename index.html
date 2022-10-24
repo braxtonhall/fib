@@ -30,6 +30,7 @@
         }
         #contributors-container {
             margin-top: 3em;
+            margin-bottom: 3em;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -44,8 +45,10 @@
         <h3>Contributors</h3>
         <div id="contributors"></div>
     </div>
+
+    <a href="https://github.com/braxtonhall/fib#contributing"><span>Want to contribute?</span></a>
 <script>
-    const getContributors = _ => fetch(`${window.location.href}/people.json`).then(res => res.json());
+    const getContributors = _ => fetch(`/fib/people.json`).then(res => res.json());
 
     const toPersonNode = person => $("<div>", {class: "person"}).append(
         toPersonHeader(person),
@@ -55,7 +58,7 @@
     const toPersonImage = github => github
         ? $("<img>", {class: "person-pic", src: `https://github.com/${github}.png`, alt: github})
         : $("<div>", {class: "person-pic"});
-    
+
 
     const toPersonDetails = person =>
         $("<div>").append(
