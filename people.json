@@ -187,5 +187,20 @@
                 "link": "https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3"
             }
         ]
+    },
+    {
+        "github": "fbanados",
+        "name": "Felipe Bañados Schwerter",
+        "title": "PhD Candidate, UBC",
+        "entries": [
+            {
+                "name": "coq",
+                "link": "./entries/fbanados/fib.v"
+            },
+            {
+                "name": "pharo-smalltalk",
+                "link": "./entries/fbanados/fib.st"
+            }
+        ]
     }
 ]
