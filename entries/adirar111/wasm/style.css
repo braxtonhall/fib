@@ -1,0 +1,27 @@
+html {
+	background: #5a46ee;
+	color: #fff;
+	font-family: "Source Code Pro"
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#input-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#input {
+	height: 40px;
+	font-size: 30px
+}
+
+#result {
+	font-size: 50px
+}
