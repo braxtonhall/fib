@@ -213,5 +213,16 @@
                 "link": "./entries/laelath/fib.bf"
             }
         ]
+    },
+    {
+        "github": "zgrannan",
+        "name": "Zack Grannan",
+        "title": "MS Student, UBC",
+        "entries": [
+            {
+                "name": "haskell",
+                "link": "./entries/zgrannan/Fib.hs"
+            }
+        ]
     }
 ]
