@@ -196,6 +196,10 @@
             {
                 "name": "coq",
                 "link": "./entries/fbanados/fib.v"
+            },
+            {
+                "name": "pharo-smalltalk",
+                "link": "./entries/fbanados/fib.st"
             }
         ]
     }
