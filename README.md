@@ -31,6 +31,9 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 ### [`Metroxe`](https://github.com/Metroxe)
 - [`html`](./entries/Metroxe/index.html)
 
+### [`shayanh`](https://github.com/shayanh)
+- [`matrix`](./entries/shayanh/matrix.go)
+
 ### [`Tarcisio-Teixeira`](https://github.com/Tarcisio-Teixeira)
 - [`logn?`](./entries/Tarcisio-Teixeira/fib.py)
 
