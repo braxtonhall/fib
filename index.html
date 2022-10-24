@@ -80,7 +80,7 @@
         }).append($("<code>").text(entry.name)),
     );
 
-    const cmpName = (a, b) => a.name < b.name ? -1 : 1;
+    const cmpName = (a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
 
     $(document).ready(
         _ => getContributors()
