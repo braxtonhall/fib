@@ -34,6 +34,9 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 ### [`nritschel`](https://github.com/nritschel)
 - [`fib-java`](./entries/nritschel/fib-java/src)
 
+### [`rtholmes`](https://github.com/rtholmes)
+- [`stack-overflow`](./entries/rtholmes/Fibonacci%20series%20in%20JavaScript%20-%20Stack%20Overflow.webloc)
+
 ### [`shayanh`](https://github.com/shayanh)
 - [`matrix`](./entries/shayanh/matrix.go)
 
