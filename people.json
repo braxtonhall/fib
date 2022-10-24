@@ -202,5 +202,16 @@
                 "link": "./entries/fbanados/fib.st"
             }
         ]
+    },
+    {
+        "github": "laelath",
+        "name": "Justin Frank",
+        "title": "PhD Student, UMD",
+        "entries": [
+            {
+                "name": "befunge",
+                "link": "./entries/laelath/fib.bf"
+            }
+        ]
     }
 ]
