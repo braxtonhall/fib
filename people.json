@@ -101,6 +101,17 @@
         ]
     },
     {
+        "github": "MarieSal0",
+        "name": "Marie Salomon",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "c#",
+                "link": "./entries/MarieSal0/FibonacciWorkplace/Program.cs"
+            }
+        ]
+    },
+    {
         "github": "meghasinghania22",
         "name": "Megha Singhania",
         "title": "BSc, UBC",
