@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+.initialize {
+  --prev: 0;
+  --next: 1;
+}
+
+.copyPrev {
+  --tmp-prev: var(--prev);
+  --tmp-next: var(--next);
+}
+
+.sumPrevious {
+  --prev: var(--tmp-next);
+  --next: calc(var(--tmp-prev) + var(--tmp-next));
+}
+
+.sumPrevious::before {
+  counter-set: fib var(--prev);
+  content: counter(fib);
+}
+    </style>
+  </head>
+  <body>
+    
+    <!--
+    These are all nested divs, but browsers are happy to fix my
+    bad code, so I can write one on each line as if they're statements!
+    -->
+
+    <div class="initialize">
+  
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+
+    <div class="copyPrev">
+    <div class="sumPrevious">
+  </body>
+</html>
