@@ -1,0 +1,1 @@
+<img src="../assets/scratch.png" alt="scratch preview">

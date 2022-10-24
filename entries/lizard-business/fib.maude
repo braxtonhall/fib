@@ -1,0 +1,27 @@
+smod FIB is
+  pr LIST{Nat} .
+
+  vars M N : Nat .
+  var  Ns  : List{Nat} .
+
+  rl [start]: nil => 0 1 .
+  rl [next]:  Ns M N => Ns M N (M + N) .
+  rl [drop] : Ns N => N .
+
+  strats fib fibgo : Nat @ List{Nat} .
+  sd fib(N)      := start ; fibgo(N) .
+  sd fibgo(0)    := top(drop) .
+  sd fibgo(s(N)) := top(next) ; fibgo(N) .
+endsm
+
+***(
+  Maude> srew nil using fib(10) .
+  srewrite in FIB : nil using fib(10) .
+
+  Solution 1
+  rewrites: 8330 in 12ms cpu (12ms real) (694166 rewrites/second)
+  result NzNat: 89
+
+  No more solutions.
+  rewrites: 8469 in 12ms cpu (13ms real) (705750 rewrites/second)
+)

@@ -1,0 +1,291 @@
+[
+    {
+        "github": "adirar111",
+        "name": "Aymen Dirar",
+        "title": "BSc Student, UBC",
+        "entries": [
+            {
+                "name": "y86",
+                "link": "./entries/adirar111/y86/fib.s"
+            },
+            {
+                "name": "wasm",
+                "link": "./entries/adirar111/wasm/fib.wat"
+            }
+        ]
+    },
+    {
+        "github": "braxtonhall",
+        "name": "Braxton Hall",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "express",
+                "link": "./entries/braxtonhall/express/index.js"
+            },
+            {
+                "name": "homework",
+                "link": "./entries/braxtonhall/homework/fib.cpp"
+            },
+            {
+                "name": "types",
+                "link": "./entries/braxtonhall/types/index.ts"
+            }
+        ]
+    },
+    {
+        "github": "ionathanch",
+        "name": "Jonathan Chan",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "agda",
+                "link": "./entries/ionathanch/Fib.agda"
+            },
+            {
+                "name": "fortran",
+                "link": "./entries/ionathanch/fib.f90"
+            }
+        ]
+    },
+    {
+        "github": "funemy",
+        "name": "Yanze Li",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "agda",
+                "link": "./entries/funemy/agda/fib1.agda"
+            },
+            {
+                "name": "z3",
+                "link": "./entries/funemy/z3/z3fib.sh"
+            }
+        ]
+    },
+    {
+        "github": "jyoo980",
+        "name": "James Yoo",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "scala",
+                "link": "./entries/jyoo980/scala/Fib.scala"
+            }
+        ]
+    },
+    {
+        "github": "lizard-business",
+        "name": "rhiannon morris",
+        "title": "amateur type system liker",
+        "entries": [
+            {
+                "name": "maude",
+                "link": "./entries/lizard-business/fib.maude"
+            },
+            {
+                "name": "ats",
+                "link": "./entries/lizard-business/fib.dats"
+            }
+        ]
+    },
+    {
+        "github": "margoseltzer",
+        "name": "Margo Seltzer",
+        "title": "Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "efficiency",
+                "link": "./entries/margoseltzer/efficiency.c"
+            }
+        ]
+    },
+    {
+        "github": "MarieSal0",
+        "name": "Marie Salomon",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "c#",
+                "link": "./entries/MarieSal0/FibonacciWorkplace/Program.cs"
+            }
+        ]
+    },
+    {
+        "github": "meghasinghania22",
+        "name": "Megha Singhania",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "bash",
+                "link": "./entries/meghasinghania22/bash/script.sh"
+            }
+        ]
+    },
+    {
+        "github": "Metroxe",
+        "name": "Christopher Powroznik",
+        "title": "BCom, UBC",
+        "entries": [
+            {
+                "name": "html",
+                "link": "./entries/Metroxe/index.html"
+            }
+        ]
+    },
+    {
+        "github": "nritschel",
+        "name": "Nico Ritschel",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "fib-java",
+                "link": "./entries/nritschel/fib-java/src"
+            },
+            {
+                "name": "xlsx",
+                "link": "./entries/nritschel/xlsx/fib.xlsx"
+            },
+            {
+                "name": "scratch",
+                "link": "./entries/nritschel/scratch"
+            }
+        ]
+    },
+    {
+        "github": "perryliao",
+        "name": "Perry Liao",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "groovy",
+                "link": "./entries/perryliao/fib.groovy"
+            }
+        ]
+    },
+    {
+        "github": "rtholmes",
+        "name": "Reid Holmes",
+        "title": "Associate Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "stack-overflow",
+                "link": "./entries/rtholmes/Fibonacci%20series%20in%20JavaScript%20-%20Stack%20Overflow.webloc"
+            }
+        ]
+    },
+    {
+        "github": "rxg",
+        "name": "Ronald Garcia",
+        "title": "Associate Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "fib-iter*",
+                "link": "./entries/rxg/fib.rkt"
+            }
+        ]
+    },
+    {
+        "github": "shayanh",
+        "name": "Shayan Hosseini",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "matrix",
+                "link": "./entries/shayanh/matrix.go"
+            }
+        ]
+    },
+	{
+		"github": "StuartLiv",
+		"name": "Stuart Livingstone",
+		"title": "BSc Student, UBC",
+		"entries": [
+			{
+				"name": "ThetaFibN",
+				"link": "./entries/StuartLiv/ThetaFibN.java"
+			}
+		]
+	},
+    {
+        "github": "Tarcisio-Teixeira",
+        "name": "Tarcísio Teixeira",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "logn?",
+                "link": "./entries/Tarcisio-Teixeira/fib.py"
+            }
+        ]
+    },
+    {
+        "github": "wilbowma",
+        "name": "William Bowman",
+        "title": "Assistant Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "fib-lang",
+                "link": "https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3"
+            }
+        ]
+    },
+    {
+        "github": "fbanados",
+        "name": "Felipe Bañados Schwerter",
+        "title": "PhD Candidate, UBC",
+        "entries": [
+            {
+                "name": "coq",
+                "link": "./entries/fbanados/fib.v"
+            },
+            {
+                "name": "pharo-smalltalk",
+                "link": "./entries/fbanados/fib.st"
+            }
+        ]
+    },
+    {
+        "github": "laelath",
+        "name": "Justin Frank",
+        "title": "PhD Student, UMD",
+        "entries": [
+            {
+                "name": "befunge",
+                "link": "./entries/laelath/fib.bf"
+            }
+        ]
+    },
+    {
+        "github": "nxjfxu",
+        "name": "Junfeng Xu",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "ouroboros",
+                "link": "./entries/nxjfxu/fib.hs"
+            }
+        ]
+    },
+    {
+        "github": "zgrannan",
+        "name": "Zack Grannan",
+        "title": "MSc Computer Science Student, UBC",
+        "entries": [
+            {
+                "name": "haskell",
+                "link": "./entries/zgrannan/Fib.hs"
+            }
+        ]
+    },
+    {
+        "github": "pkoronkevich",
+        "name": "Paulette Koronkevich",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "tex",
+                "link": "./entries/pkoronkevich/tex"
+            }
+        ]
+    }
+]
