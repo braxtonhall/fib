@@ -14,6 +14,11 @@ else
     touch fib.smt2
 fi
 
+if [ "$1" -lt "0" ]; then
+  echo "Argument must be larger than 0."
+  exit 1
+fi
+
 for i in $(seq 0 $1);
 do
   echo "(declare-const x$i Int)" >> fib.smt2
@@ -32,10 +37,13 @@ done
 echo "    (= x0 0)" >> fib.smt2
 echo "    (= x1 1)" >> fib.smt2
 
-for i in $(seq 2 $1);
-do
-  echo "    (= x$i (+ x$(($i - 2)) x$(($i - 1))))" >> fib.smt2
-done
+if [ "$1" -ge "2" ]; then
+  for i in $(seq 2 $1);
+  do
+    echo "    (= x$i (+ x$(($i - 2)) x$(($i - 1))))" >> fib.smt2
+  done
+fi
+
 
 echo "  )" >> fib.smt2
 echo ")" >> fib.smt2
