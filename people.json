@@ -130,6 +130,14 @@
             {
                 "name": "fib-java",
                 "link": "./entries/nritschel/fib-java/src"
+            },
+            {
+                "name": "xlsx",
+                "link": "./entries/nritschel/xlsx/fib.xlsx"
+            },
+            {
+                "name": "scratch",
+                "link": "./entries/nritschel/scratch"
             }
         ]
     },
@@ -222,6 +230,17 @@
             {
                 "name": "ouroboros",
                 "link": "./entries/nxjfxu/fib.hs"
+            }
+        ]
+    },
+    {
+        "github": "zgrannan",
+        "name": "Zack Grannan",
+        "title": "MSc Computer Science Student, UBC",
+        "entries": [
+            {
+                "name": "haskell",
+                "link": "./entries/zgrannan/Fib.hs"
             }
         ]
     }
