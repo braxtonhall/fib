@@ -26,4 +26,11 @@ if (!(person.entries && person.entries.length > 0)) {
     throw `${actor} is missing entries!`;
 }
 
+for (const entry of person.entries) {
+    const {link} = entry;
+    if (!(link.startsWith("http") || fs.existsSync(link))) {
+        throw `${link} not found!`;
+    }
+}
+
 console.log("Checked!");
