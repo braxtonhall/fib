@@ -82,13 +82,12 @@
 
     const cmpName = (a, b) => a.name < b.name ? -1 : 1;
 
-    $(document).ready(async _ => {
-        const contributors = await getContributors()
+    $(document).ready(
+        _ => getContributors()
             .then(people => people.sort(cmpName))
             .then(people => people.map(toPersonNode))
-            .then(nodes => $("#contributors").append(...nodes));
-        console.log(contributors);
-    });
+            .then(nodes => $("#contributors").append(...nodes))
+    );
 </script>
 </body>
 </html>
