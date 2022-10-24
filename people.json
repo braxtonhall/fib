@@ -288,4 +288,15 @@
             }
         ]
     }
+	{
+        "github": "dewert99",
+        "name": "David Ewert",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "tex",
+                "link": "./entries/dewert99/fib.rs"
+            }
+        ]
+    }
 ]
