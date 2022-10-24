@@ -34,6 +34,9 @@ For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art G
 ### [`Tarcisio-Teixeira`](https://github.com/Tarcisio-Teixeira)
 - [`logn?`](./entries/Tarcisio-Teixeira/fib.py)
 
+### [`shayanh`](https://github.com/shayanh)
+- [`matrix`](./entries/shayanh/matrix.go)
+
 ## Contributing
 To contribute just make a PR into the `main` branch!
 
