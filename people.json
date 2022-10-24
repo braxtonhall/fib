@@ -71,6 +71,21 @@
         ]
     },
     {
+        "github": "lizard-business",
+        "name": "rhiannon morris",
+        "title": "amateur type system liker",
+        "entries": [
+            {
+                "name": "maude",
+                "link": "./entries/lizard-business/fib.maude"
+            },
+            {
+                "name": "ats",
+                "link": "./entries/lizard-business/fib.dats"
+            }
+        ]
+    },
+    {
         "github": "margoseltzer",
         "name": "Margo Seltzer",
         "title": "Professor of Computer Science, UBC",
