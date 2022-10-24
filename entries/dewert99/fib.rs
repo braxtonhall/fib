@@ -14,7 +14,7 @@ const fn fibc<const N: usize>() -> [u64; N] {
 static FIB: [u64; MAX] = fibc();
 
 pub fn fib(n: usize) -> Option<u64> {
-    if n > MAX {
+    if n >= MAX {
         None // Fib of n wouldn't fit in 64-bits
     } else {
         Some(FIB[n])
