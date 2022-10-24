@@ -294,7 +294,7 @@
         "title": "MSc Student, UBC",
         "entries": [
             {
-                "name": "tex",
+                "name": "O(1)",
                 "link": "./entries/dewert99/fib.rs"
             }
         ]
