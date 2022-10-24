@@ -1,0 +1,3 @@
+[submodule "entries/wilbowma/fib-lang"]
+	path = entries/wilbowma/fib-lang
+	url = git@github.com:wilbowma/fib-lang.git
