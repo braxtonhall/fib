@@ -223,6 +223,17 @@
         ]
     },
     {
+        "github": "nxjfxu",
+        "name": "Junfeng Xu",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "ouroboros",
+                "link": "./entries/nxjfxu/fib.hs"
+            }
+        ]
+    },
+    {
         "github": "zgrannan",
         "name": "Zack Grannan",
         "title": "MSc Computer Science Student, UBC",
