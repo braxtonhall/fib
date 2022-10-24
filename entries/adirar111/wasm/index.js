@@ -10,8 +10,10 @@ WebAssembly.instantiateStreaming(fetch(wasmBinaryDataURL)).then(
 			const result = document.getElementById("result")
 			const n = parseInt(input.value)
 			if (isNaN(n)) {
-				result.textContent = "that's not a number..."
-				return
+				return result.textContent = "that wasn't very wasm of you"
+			}
+			if (n < 0) {
+				return result.textContent = "why are you being so negative"
 			}
 			result.textContent = fibWasm(n)
 		}
