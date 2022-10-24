@@ -180,12 +180,23 @@
     {
         "github": "wilbowma",
         "name": "William Bowman",
-        "title": "Assistant Professor of Computer Science, UBC",
+        "title": "MSc Computer Science Student, UBC",
         "entries": [
             {
                 "name": "fib-lang",
                 "link": "https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3"
             }
+        ]
+    }
+    {
+        "github": "gonzalezf",
+        "name": "Felipe González-Pizarro",
+        "title": "Assistant Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "fib",
+                "link": "./entries/gonzalezf/fib.py"
+            }        
         ]
     }
 ]
