@@ -1,0 +1,172 @@
+[
+    {
+        "github": "adirar111",
+        "name": "Aymen Dirar",
+        "title": "BSc Student, UBC",
+        "entries": [
+            {
+                "name": "y86",
+                "link": "./entries/adirar111/y86/fib.s"
+            }
+        ]
+    },
+    {
+        "github": "braxtonhall",
+        "name": "Braxton Hall",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "express",
+                "link": "./entries/braxtonhall/express/index.js"
+            },
+            {
+                "name": "homework",
+                "link": "./entries/braxtonhall/homework/fib.cpp"
+            },
+            {
+                "name": "types",
+                "link": "./entries/braxtonhall/types/index.ts"
+            }
+        ]
+    },
+    {
+        "github": "ionathanch",
+        "name": "Jonathan Chan",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "agda",
+                "link": "./entries/ionathanch/Fib.agda"
+            },
+            {
+                "name": "fortran",
+                "link": "./entries/ionathanch/fib.f90"
+            }
+        ]
+    },
+    {
+        "github": "funemy",
+        "name": "Yanze Li",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "agda",
+                "link": "./entries/funemy/agda/fib1.agda"
+            },
+            {
+                "name": "z3",
+                "link": "./entries/funemy/z3/z3fib.sh"
+            }
+        ]
+    },
+    {
+        "github": "jyoo980",
+        "name": "James Yoo",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "scala",
+                "link": "./entries/jyoo980/scala/Fib.scala"
+            }
+        ]
+    },
+    {
+        "github": "margoseltzer",
+        "name": "Margo Seltzer",
+        "title": "Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "efficiency",
+                "link": "./entries/margoseltzer/efficiency.c"
+            }
+        ]
+    },
+    {
+        "github": "meghasinghania22",
+        "name": "Megha Singhania",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "bash",
+                "link": "./entries/meghasinghania22/bash/script.sh"
+            }
+        ]
+    },
+    {
+        "github": "Metroxe",
+        "name": "Christopher Powroznik",
+        "title": "BCom, UBC",
+        "entries": [
+            {
+                "name": "html",
+                "link": "./entries/Metroxe/index.html"
+            }
+        ]
+    },
+    {
+        "github": "nritschel",
+        "name": "Nico Ritschel",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "fib-java",
+                "link": "./entries/nritschel/fib-java/src"
+            }
+        ]
+    },
+    {
+        "github": "perryliao",
+        "name": "Perry Liao",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "groovy",
+                "link": "./entries/perryliao/fib.groovy"
+            }
+        ]
+    },
+    {
+        "github": "rtholmes",
+        "name": "Reid Holmes",
+        "title": "Associate Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "stack-overflow",
+                "link": "./entries/rtholmes/Fibonacci%20series%20in%20JavaScript%20-%20Stack%20Overflow.webloc"
+            }
+        ]
+    },
+    {
+        "github": "shayanh",
+        "name": "Shayan Hosseini",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "matrix",
+                "link": "./entries/shayanh/matrix.go"
+            }
+        ]
+    },
+    {
+        "github": "Tarcisio-Teixeira",
+        "name": "Tarcísio Teixeira",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "logn?",
+                "link": "./entries/Tarcisio-Teixeira/fib.py"
+            }
+        ]
+    },
+    {
+        "github": "wilbowma",
+        "name": "William Bowman",
+        "title": "Assistant Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "fib-lang",
+                "link": "https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3"
+            }
+        ]
+    }
+]

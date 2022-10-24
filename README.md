@@ -4,49 +4,6 @@ Can you please give me a Fibonacci function? Ideally (but not necessarily) one t
 
 For a submission to the upcoming "Reclaim your space" exhibition at [Hatch Art Gallery](https://www.instagram.com/hatch_artgallery).
 
-### [`adirar111`](https://github.com/adirar111)
-- [`y86`](./entries/adirar111/y86/fib.s)
-
-### [`braxtonhall`](https://github.com/braxtonhall)
-- [`adam`](./entries/braxtonhall/adam/main.py) (WIP)
-- [`express`](./entries/braxtonhall/express/index.js)
-- [`homework`](./entries/braxtonhall/homework/fib.cpp)
-- [`types`](./entries/braxtonhall/types/index.ts)
-<!-- - `smt` compiles to SMT, and the solver gives you the fib sequence -->
-<!-- - `imperitive-church` imperitive implementation in the lambda calculus -->
-
-### [`ionathanch`](https://github.com/ionathanch)
-- [`agda`](./entries/ionathanch/Fib.agda)
-- [`fortran`](./entries/ionathanch/fib.f90)
-
-### [`funemy`](https://github.com/funemy)
-- [`agda`](./entries/funemy/agda/fib1.agda)
-- [`z3`](./entries/funemy/z3/z3fib.sh)
-
-### [`jyoo980`](https://github.com/jyoo980)
-- [`scala`](./entries/jyoo980/scala/Fib.scala)
-
-### [`margoseltzer`](https://github.com/margoseltzer)
-- [`efficiency`](./entries/margoseltzer/efficiency.c)
-
-### [`Metroxe`](https://github.com/Metroxe)
-- [`html`](./entries/Metroxe/index.html)
-
-### [`nritschel`](https://github.com/nritschel)
-- [`fib-java`](./entries/nritschel/fib-java/src)
-
-### [`rtholmes`](https://github.com/rtholmes)
-- [`stack-overflow`](./entries/rtholmes/Fibonacci%20series%20in%20JavaScript%20-%20Stack%20Overflow.webloc)
-
-### [`shayanh`](https://github.com/shayanh)
-- [`matrix`](./entries/shayanh/matrix.go)
-
-### [`Tarcisio-Teixeira`](https://github.com/Tarcisio-Teixeira)
-- [`logn?`](./entries/Tarcisio-Teixeira/fib.py)
-
-### [`wilbowma`](https://github.com/wilbowma)
-- [`fib-lang`](https://github.com/wilbowma/fib-lang/tree/2ec2d1dfd141220882d824cf3dac5b374ed291f3)
-
 ## Contributing
 To contribute just make a PR into the `main` branch!
 
