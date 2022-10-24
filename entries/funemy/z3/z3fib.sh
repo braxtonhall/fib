@@ -44,7 +44,6 @@ if [ "$1" -ge "2" ]; then
   done
 fi
 
-
 echo "  )" >> fib.smt2
 echo ")" >> fib.smt2
 
