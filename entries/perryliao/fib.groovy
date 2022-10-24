@@ -6,19 +6,19 @@ pipeline {
     }
 
     stages {
+        stage('Validate Parameter') {
+            steps {
+                script {
+                    assert params.num.isInteger()
+                }
+            }
+        }
         stage('Create Cache') {
             steps {
                 script {
                     if (!fileExists("fibCache")) {
                         sh 'echo "0\n1" > fibCache'
                     }
-                }
-            }
-        }
-        stage('Validate Parameter') {
-            steps {
-                script {
-                    assert params.num.isInteger()
                 }
             }
         }
