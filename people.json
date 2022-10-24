@@ -243,5 +243,16 @@
                 "link": "./entries/zgrannan/Fib.hs"
             }
         ]
+    },
+    {
+        "github": "pkoronkevich",
+        "name": "Paulette Koronkevich",
+        "title": "PhD Student, UBC",
+        "entries": [
+            {
+                "name": "tex",
+                "link": "./entries/pkoronkevich/tex"
+            }
+        ]
     }
 ]
