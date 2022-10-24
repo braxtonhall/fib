@@ -288,7 +288,7 @@
             }
         ]
     },
-	{
+    {
         "github": "davepagurek",
         "name": "Dave Pagurek",
         "title": "MSc, UBC",
@@ -296,6 +296,17 @@
             {
                 "name": "css",
                 "link": "./entries/davepagurek/index.html"
+            }
+        ]
+    },
+    {
+        "github": "dewert99",
+        "name": "David Ewert",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "O(1)",
+                "link": "./entries/dewert99/fib.rs"
             }
         ]
     }
