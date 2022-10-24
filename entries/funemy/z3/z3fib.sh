@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Instruction:
-#  1. having z3 installed and under you $PATH
+# Instructions:
+#  1. having z3 installed and put under your $PATH
 #  2. making sure z3fib.sh is executable, by `chmod +x z3fib.sh`
 #  3. running as `./z3fib.sh [length of the fib sequence]`
 #  4. having fun :)
