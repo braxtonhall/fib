@@ -7,6 +7,10 @@
             {
                 "name": "y86",
                 "link": "./entries/adirar111/y86/fib.s"
+            },
+            {
+                "name": "wasm",
+                "link": "./entries/adirar111/wasm/fib.wat"
             }
         ]
     },
