@@ -287,5 +287,16 @@
                 "link": "./entries/pkoronkevich/tex"
             }
         ]
+    },
+	{
+        "github": "dewert99",
+        "name": "David Ewert",
+        "title": "MSc Student, UBC",
+        "entries": [
+            {
+                "name": "O(1)",
+                "link": "./entries/dewert99/fib.rs"
+            }
+        ]
     }
 ]
