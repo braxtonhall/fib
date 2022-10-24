@@ -71,7 +71,12 @@
             {
                 "name": "scala",
                 "link": "./entries/jyoo980/scala/Fib.scala"
+            },
+            {
+                "name": "vintage-htdp",
+                "link": "./entries/jyoo980/vintage-htdp/fib.rkt"
             }
+
         ]
     },
     {
