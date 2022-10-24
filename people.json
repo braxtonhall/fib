@@ -287,5 +287,16 @@
                 "link": "./entries/pkoronkevich/tex"
             }
         ]
+    },
+	{
+        "github": "davepagurek",
+        "name": "Dave Pagurek",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "css",
+                "link": "./entries/davepagurek/index.html"
+            },
+        ]
     }
 ]
