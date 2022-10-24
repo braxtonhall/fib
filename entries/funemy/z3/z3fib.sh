@@ -35,7 +35,9 @@ do
 done
 
 echo "    (= x0 0)" >> fib.smt2
-echo "    (= x1 1)" >> fib.smt2
+if [ "$1" -ge "1" ]; then
+  echo "    (= x1 1)" >> fib.smt2
+fi
 
 if [ "$1" -ge "2" ]; then
   for i in $(seq 2 $1);
