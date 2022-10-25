@@ -329,5 +329,16 @@
                 "link": "./entries/dewert99/fib.rs"
             }
         ]
+    },
+    {
+        "github": "markusdemedeiros",
+        "name": "Markus de Medeiros",
+        "title": "BSc Student, UBC",
+        "entries": [
+            {
+                "name": "collatz",
+                "link": "./entries/markusde/collatz/collatz.png"
+            }
+        ]
     }
 ]
