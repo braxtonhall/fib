@@ -122,6 +122,17 @@
         ]
     },
     {
+        "github": "LucasZamprogno",
+        "name": "Lucas Zamprogno",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "node",
+                "link": "./entries/lucaszamprogno/fib.js"
+            }
+        ]
+    },
+    {
         "github": "margoseltzer",
         "name": "Margo Seltzer",
         "title": "Professor of Computer Science, UBC",
