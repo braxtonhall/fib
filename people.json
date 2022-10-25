@@ -83,6 +83,25 @@
 
         ]
     },
+	{
+		"github": "rctcwyvrn",
+		"name": "Lily Lin",
+		"title": "BSc, UBC",
+		"entries": [
+			{
+				"name": "fractran",
+				"link": "./entries/lilylin/fractran/src/core.rs"
+			},
+			{
+				"name": "cursed-x86",
+				"link": "./entries/lilylin/cursed-x86/"
+			},
+			{
+				"name": "mov",
+				"link": "./entries/lilylin/mov/mov.s"
+			}
+		]
+	},
     {
         "github": "lizard-business",
         "name": "rhiannon morris",
