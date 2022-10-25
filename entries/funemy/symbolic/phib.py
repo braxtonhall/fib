@@ -4,7 +4,7 @@ def phib(xs: List[int]) -> bool:
     """
     Instructions:
         1. `pip install crosshair-tool`
-        2.  modify the precondition `pre` to control the length of your fib sequence
+        2. modify the precondition `pre` to control the length of your fib sequence
         3. run `crosshair check phib.py` in your terminal
 
     pre: len(xs) >= 10
