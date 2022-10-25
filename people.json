@@ -34,6 +34,10 @@
             {
                 "name": "types",
                 "link": "./entries/braxtonhall/types/index.ts"
+            },
+            {
+                "name": "wc",
+                "link": "./entries/braxtonhall/wc/fib.sh"
             }
         ]
     },
@@ -114,6 +118,17 @@
             {
                 "name": "ats",
                 "link": "./entries/lizard-business/fib.dats"
+            }
+        ]
+    },
+    {
+        "github": "LucasZamprogno",
+        "name": "Lucas Zamprogno",
+        "title": "MSc, UBC",
+        "entries": [
+            {
+                "name": "node",
+                "link": "./entries/lucaszamprogno/fib.js"
             }
         ]
     },

@@ -1,0 +1,14 @@
+{
+  "name": "fib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fibonacci-series": "1.0.1"
+  },
+  "author": "Lucas Zamprogno",
+  "license": "ISC"
+}
