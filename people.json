@@ -87,6 +87,10 @@
             {
                 "name": "symbolic",
                 "link": "./entries/funemy/symbolic/phib.py"
+            },
+            {
+                "name": "koka",
+                "link": "./entries/funemy/koka/fib.kk"
             }
         ]
     },
