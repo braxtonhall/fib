@@ -119,14 +119,13 @@ long fib(long n) {
 
 	if (is_in_cache(list_of_files, size_of_lof, n)) {
 		free(list_of_files);
-		long cached_value = read_from_cache(path);
-		return cached_value;
+		return read_from_cache(path);
 	}
 
 	free(list_of_files);
-	long toCache = fib(n-1) + fib(n-2);
-	write_to_cache(path,  toCache);
-	return toCache;
+	long to_cache = fib(n-1) + fib(n-2);
+	write_to_cache(path,  to_cache);
+	return to_cache;
 }
 
 
