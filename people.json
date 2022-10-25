@@ -57,6 +57,17 @@
         ]
     },
     {
+        "github": "jlouis",
+        "name": "Jesper Louis Andersen",
+        "title": "BSc, Copenhagen University",
+        "entries": [
+            {
+                "name": "ocaml",
+                "link": "./entries/jlouis/lib/fib.ml"
+            }
+        ]
+    },
+    {
         "github": "funemy",
         "name": "Yanze Li",
         "title": "PhD Student, UBC",
@@ -91,29 +102,32 @@
             {
                 "name": "vintage-htdp",
                 "link": "./entries/jyoo980/vintage-htdp/fib.rkt"
+            },
+            {
+                "name": "aspectj",
+                "link": "./entries/jyoo980/aspectj/Fibonacci.aj"
             }
-
         ]
     },
-	{
-		"github": "rctcwyvrn",
-		"name": "Lily Lin",
-		"title": "BSc, UBC",
-		"entries": [
-			{
-				"name": "fractran",
-				"link": "./entries/lilylin/fractran/fractran.py"
-			},
-			{
-				"name": "cursed-x86",
-				"link": "./entries/lilylin/cursed-x86/"
-			},
-			{
-				"name": "mov",
-				"link": "./entries/lilylin/mov/mov.s"
-			}
-		]
-	},
+    {
+        "github": "rctcwyvrn",
+        "name": "Lily Lin",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "fractran",
+                "link": "./entries/lilylin/fractran/fractran.py"
+            },
+            {
+                "name": "cursed-x86",
+                "link": "./entries/lilylin/cursed-x86/"
+            },
+            {
+                "name": "mov",
+                "link": "./entries/lilylin/mov/mov.s"
+            }
+        ]
+    },
     {
         "github": "lizard-business",
         "name": "rhiannon morris",
@@ -247,17 +261,17 @@
             }
         ]
     },
-	{
-		"github": "StuartLiv",
-		"name": "Stuart Livingstone",
-		"title": "BSc Student, UBC",
-		"entries": [
-			{
-				"name": "ThetaFibN",
-				"link": "./entries/StuartLiv/ThetaFibN.java"
-			}
-		]
-	},
+    {
+        "github": "StuartLiv",
+        "name": "Stuart Livingstone",
+        "title": "BSc Student, UBC",
+        "entries": [
+            {
+                "name": "ThetaFibN",
+                "link": "./entries/StuartLiv/ThetaFibN.java"
+            }
+        ]
+    },
     {
         "github": "Tarcisio-Teixeira",
         "name": "Tarcísio Teixeira",
@@ -266,6 +280,10 @@
             {
                 "name": "logn?",
                 "link": "./entries/Tarcisio-Teixeira/fib.py"
+            },
+            {
+                "name": "differential",
+                "link": "./entries/Tarcisio-Teixeira/differential.py"
             }
         ]
     },
