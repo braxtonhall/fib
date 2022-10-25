@@ -11,6 +11,10 @@
             {
                 "name": "wasm",
                 "link": "./entries/adirar111/wasm/fib.wat"
+            },
+            {
+                "name": "c-filesystem",
+                "link": "./entries/adirar111/c-filesystem/fib-fs.c"
             }
         ]
     },
