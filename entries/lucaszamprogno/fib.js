@@ -1,0 +1,1 @@
+console.log(require('fibonacci-series')(process.argv[2]))
