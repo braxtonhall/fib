@@ -90,7 +90,7 @@
 		"entries": [
 			{
 				"name": "fractran",
-				"link": "./entries/lilylin/fractran/src/core.rs"
+				"link": "./entries/lilylin/fractran/fractran.py"
 			},
 			{
 				"name": "cursed-x86",
