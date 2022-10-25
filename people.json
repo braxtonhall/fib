@@ -98,6 +98,10 @@
             {
                 "name": "vintage-htdp",
                 "link": "./entries/jyoo980/vintage-htdp/fib.rkt"
+            },
+            {
+                "name": "aspectj",
+                "link": "./entries/jyoo980/aspectj/Fibonacci.aj"
             }
         ]
     },
