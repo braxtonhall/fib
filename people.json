@@ -30,6 +30,10 @@
             {
                 "name": "types",
                 "link": "./entries/braxtonhall/types/index.ts"
+            },
+            {
+                "name": "wc",
+                "link": "./entries/braxtonhall/wc/fib.sh"
             }
         ]
     },
