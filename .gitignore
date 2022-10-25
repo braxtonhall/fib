@@ -2,4 +2,3 @@ node_modules
 *.log
 *.pem
 .DS_Store
-entries/lilylin/fractran/target
