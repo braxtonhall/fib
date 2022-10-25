@@ -32,6 +32,7 @@ echo "      (=> (and (> i 1) (< i (seq.len fib)))" >> fib.smt2
 echo "        (= (seq.nth fib i)" >> fib.smt2
 echo "          (+ (seq.nth fib (- i 1))" >> fib.smt2
 echo "            (seq.nth fib (- i 2))))))))" >> fib.smt2
+echo "" >> fib.smt2
 
 
 echo "(check-sat)" >> fib.smt2
