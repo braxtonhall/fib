@@ -16,7 +16,7 @@ else
 fi
 
 if [ "$1" -lt "0" ]; then
-  echo "Argument must be larger than 0."
+  echo "Argument must be larger or equal to 0."
   exit 1
 fi
 
