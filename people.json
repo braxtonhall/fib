@@ -81,6 +81,10 @@
                 "link": "./entries/funemy/z3/z3fib.sh"
             },
             {
+                "name": "z4",
+                "link": "./entries/funemy/z3/z4fib.sh"
+            },
+            {
                 "name": "symbolic",
                 "link": "./entries/funemy/symbolic/phib.py"
             }
