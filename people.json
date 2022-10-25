@@ -235,6 +235,17 @@
         ]
     },
     {
+        "github": "gonzalezf",
+        "name": "Felipe González-Pizarro",
+        "title": "MSc Computer Science Student, UBC",
+        "entries": [
+            {
+                "name": "fib",
+                "link": "./entries/gonzalezf/fib.py"
+            }
+        ]
+    },
+    {
         "github": "fbanados",
         "name": "Felipe Bañados Schwerter",
         "title": "PhD Candidate, UBC",
