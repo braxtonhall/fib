@@ -90,11 +90,11 @@
 		"entries": [
 			{
 				"name": "fractran",
-				"link": "./entries/lilylin/fractran/"
+				"link": "./entries/lilylin/fractran/src/core.rs"
 			},
 			{
-				"name": "cursed x86 (look at the control flow graph)",
-				"link": "./entries/lilylin/cursed-x86"
+				"name": "cursed-x86",
+				"link": "./entries/lilylin/cursed-x86/"
 			},
 			{
 				"name": "mov",
