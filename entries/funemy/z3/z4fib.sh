@@ -34,7 +34,6 @@ echo "          (+ (seq.nth fib (- i 1))" >> fib.smt2
 echo "            (seq.nth fib (- i 2))))))))" >> fib.smt2
 echo "" >> fib.smt2
 
-
 echo "(check-sat)" >> fib.smt2
 echo "(get-model)" >> fib.smt2
 
