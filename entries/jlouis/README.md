@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Everything is in `bin/fib.ml` and the rest is just scaffolding.
+Everything is in `lib/fib.ml` and the rest is just scaffolding.
 
 Use nix to get an OCaml development environment.
 
