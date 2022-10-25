@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fib</title>
+    <style>
+        .person {
+            margin-bottom: 1em;
+        }
+        .person-pic {
+            width: 50px;
+        }
+        .person-header {
+            display: flex;
+            align-items: end;
+        }
+        .person-header > * {
+            margin: 0.5em;
+        }
+        .person-name {
+            margin-bottom: 0;
+        }
+        .person-title {
+            margin-top: 0;
+            font-size: 80%;
+        }
+        .person > p {
+            margin: 0;
+            margin-left: 0.5em;
+        }
+        #contributors-container {
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1><code>fib</code></h1>
+    <p>Can you please give me a Fibonacci function? Ideally (but not necessarily) one that only you would give me.</p>
+
+    <p>For a submission to the upcoming "Reclaim your space" exhibition at <a href="https://www.instagram.com/hatch_artgallery">Hatch Art Gallery</a>.</p>
+
+    <div id="contributors-container">
+        <h3>Contributors</h3>
+        <div id="contributors"></div>
+    </div>
+
+    <a href="https://github.com/braxtonhall/fib#contributing"><span>Want to contribute?</span></a>
+<script>
+    const getContributors = _ => fetch(`/fib/people.json`).then(res => res.json());
+
+    const toPersonNode = person => $("<div>", {class: "person"}).append(
+        toPersonHeader(person),
+        ...person.entries.sort(cmpName).map(toPersonEntryNode),
+    );
+
+    const toPersonImage = github => github
+        ? $("<img>", {class: "person-pic", src: `https://github.com/${github}.png`, alt: github})
+        : $("<div>", {class: "person-pic"});
+
+
+    const toPersonDetails = person =>
+        $("<div>").append(
+            person.github
+                ? $("<a>", {href: `https://github.com/${person.github}`})
+                    .append($("<p>", {class: "person-name"}).text(person.name))
+                : $("<p>", {class: "person-name"}).text(person.name),
+            $("<p>", {class: "person-title"}).text(person.title),
+        );
+
+    const toPersonHeader = person => $("<div>", {class: "person-header"})
+        .append(toPersonImage(person.github), toPersonDetails(person));
+
+    const toPersonEntryNode = entry => $("<p>").append(
+        $("<a>", {
+            href: entry.link.startsWith("./entries")
+                ? `https://github.com/braxtonhall/fib/tree/main/${entry.link.replace(/^\.\//, "")}`
+                : entry.link
+        }).append($("<code>").text(entry.name)),
+    );
+
+    const cmpName = (a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
+
+    $(document).ready(
+        _ => getContributors()
+            .then(people => people.sort(cmpName))
+            .then(people => people.map(toPersonNode))
+            .then(nodes => $("#contributors").append(...nodes))
+    );
+</script>
+</body>
+</html>

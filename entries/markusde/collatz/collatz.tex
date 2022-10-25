@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+\usepackage[landscape]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\renewcommand{\phi}{\varphi}
+\begin{document}
+
+\noindent The least fixed point of 
+\begin{align*}
+    h & : (\mathbb{N}_\bot \to \mathbb{Z}_\bot) \to (\mathbb{N}_\bot \to \mathbb{Z}_\bot) \\
+    h(F)(n) & = 
+    \begin{cases}
+        1 & n = 1 \\
+        (\phi^{n/2} + (-\phi)^{-n/2})\, F_{n/2} & n \textrm{ is even} \\
+        \sqrt[3]{\frac{\phi^{3n+1}-\phi F_{3n+1}}{10} + \frac{\sqrt{25 \phi^{3n+1} - 25\phi F_{3n+1} - 20}}{50}} + \sqrt[3]{\frac{\phi^{3n+1}-\phi F_{3n+1}}{10} - \frac{\sqrt{25 \phi^{3n+1} - 25\phi F_{3n+1} - 20}}{50}} & \textrm{otherwise} \\
+    \end{cases}
+\end{align*}
+is the Fibonacci sequence if and only if the Collatz conjecture is true.
+
+\end{document}

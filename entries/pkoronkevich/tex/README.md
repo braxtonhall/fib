@@ -1,0 +1,1 @@
+<img src="./render.png" alt="fib.tex preview">

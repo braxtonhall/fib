@@ -1,0 +1,29 @@
+\documentclass[11pt]{article}
+\usepackage[fleqn]{amsmath}
+
+\newcommand{\one}{\lambda f . \lambda x . f \ x}
+\newcommand{\two}{\lambda f . \lambda x . f \ (f \ x)}
+\newcommand{\tru}{\lambda x . \lambda y . x}
+\newcommand{\flse}{\lambda x . \lambda y . y}
+\newcommand{\isz}{\lambda n . n \ (\lambda c . \flse) \ \tru}
+\newcommand{\ife}{\lambda p . \lambda a . \lambda b . p \ a \ b}
+\newcommand{\suc}{\lambda n . \lambda f . \lambda x . f \ (n \ f \ x)}
+\newcommand{\plus}{\lambda m . \lambda n . m \ (\suc) \ n}
+\newcommand{\pred}{\lambda n . \lambda f . \lambda x . n \ (\lambda g . \lambda h . h \ (g \ f)) \ (\lambda u . x) \ (\lambda u . u)}
+\newcommand{\sub}{\lambda m . \lambda n . n \ (\pred) \ m}
+\newcommand{\lleq}{\lambda m . \lambda n . \\ \qquad \isz \ ((\sub) \\ \qquad \ m \ n)}
+\newcommand{\fix}{\lambda g . (\lambda x . g \ (x \ x)) \ (\lambda x . g \ (x \ x))}
+\newcommand{\appo}[2]{#1 \ #2}
+\newcommand{\appt}[3]{#1 \ #2 \ #3}
+
+\begin{document}
+\begin{gather*}
+  \fix \\                                   % recursive function application
+  \quad \lambda r . \lambda n . (\ife) \\   % of fib, which takes itself and n, if expression
+  \quad \ \appt{(\lleq)}{n}{\one} \\        % if n less than or equal to one
+  \quad \ (\one) \\                         % if so, return 1
+  \quad \ (\plus) \\                        % if not, add 
+  \qquad \appo{r}{(\appo{(\pred)}{n})} \\   % the first recursive call, n - 1, to
+  \qquad \appo{r}{(\appt{(\sub)}{n}{\two})} % the second recursive call, n - 2
+\end{gather*}
+\end{document}
