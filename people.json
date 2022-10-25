@@ -280,6 +280,10 @@
             {
                 "name": "logn?",
                 "link": "./entries/Tarcisio-Teixeira/fib.py"
+            },
+            {
+                "name": "differential",
+                "link": "./entries/Tarcisio-Teixeira/differential.py"
             }
         ]
     },
