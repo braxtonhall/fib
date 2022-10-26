@@ -118,6 +118,21 @@
         ]
     },
     {
+        "github": "kevindhir",
+        "name": "Kevin Dhir",
+        "title": "BCom, UBC",
+        "entries": [
+            {
+                "name": "online-assessment",
+                "link": "./entries/kevindhir/aws/Solution.java"
+            },
+            {
+                "name": "ts",
+                "link": "./entries/kevindhir/ts/fib.ts"
+            }
+        ]
+    },
+    {
         "github": "rctcwyvrn",
         "name": "Lily Lin",
         "title": "BSc, UBC",
