@@ -399,6 +399,17 @@
         ]
     },
     {
+        "github": "Zhengdw",
+        "name": "David Zheng",
+        "title": "PhD Candidate, UIUC",
+        "entries": [
+            {
+                "name": "actual_fib",
+                "link": "./entries/Zhengdw/actual_fib.txt"
+            }
+        ]
+    },
+    {
         "github": "markusdemedeiros",
         "name": "Markus de Medeiros",
         "title": "BSc Student, UBC",
