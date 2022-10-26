@@ -1,3 +1,6 @@
 .DS_Store
 *.agdai
 *.smt2
+**/.koka/*
+*.hi
+*.o
