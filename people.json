@@ -410,6 +410,10 @@
             {
                 "name": "O(1)",
                 "link": "./entries/dewert99/fib.rs"
+            },
+			{
+                "name": "efficient bigint",
+                "link": "./entries/dewert99/big_fib.rs"
             }
         ]
     },
