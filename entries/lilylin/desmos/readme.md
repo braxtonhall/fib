@@ -1,3 +1,3 @@
-https://www.desmos.com/calculator/gr0vvrxqe0 
+https://www.desmos.com/calculator/a75xhba7vw
 
-![](./output.gif)
+![](./fib.gif)
