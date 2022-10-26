@@ -89,6 +89,10 @@
                 "link": "./entries/funemy/symbolic/phib.py"
             },
             {
+                "name": "morphism",
+                "link": "./entries/funemy/haskell/morphib.hs"
+            },
+            {
                 "name": "koka",
                 "link": "./entries/funemy/koka/fib.kk"
             }
