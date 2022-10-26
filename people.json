@@ -419,5 +419,16 @@
                 "link": "./entries/markusde/collatz/collatz.png"
             }
         ]
+    },
+    {
+        "github": "nwoeanhinnogaehr",
+        "name": "Noah Weninger",
+        "title": "PhD Student, UWaterloo",
+        "entries": [
+            {
+                "name": "x86 ELF",
+                "link": "./entries/nwoeanhinnogaehr/fib.asm"
+            }
+        ]
     }
 ]
