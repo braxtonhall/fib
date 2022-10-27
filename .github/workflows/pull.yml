@@ -32,4 +32,4 @@ jobs:
                 uses: creyD/prettier_action@v4.2
                 with:
                     same_commit: true
-                    prettier_options: --write people.json
+                    prettier_options: --use-tabs --write people.json
