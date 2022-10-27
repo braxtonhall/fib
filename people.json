@@ -26,6 +26,10 @@
 			{
 				"name": "golden",
 				"link": "./entries/alexanderjsummers/scala/Fib.scala"
+			},
+			{
+				"name": "vpr",
+				"link": "./entries/alexanderjsummers/vpr/fib.vpr"
 			}
 		]
 	},

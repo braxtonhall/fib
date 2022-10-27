@@ -1,0 +1,60 @@
+function fib(i:Int) : Int
+  requires i >= 0
+  ensures result > 0 // don't try to convince me
+{
+  i <= 1 ? 1 : fib(i-1) + fib(i-2)
+}
+
+// inductive proof (for arbitrary i, induction over j s.t. 0 < j && j < i)
+function gen_fib_lemma(i:Int, j:Int) : Bool
+  requires 0 < j && j < i
+  ensures result
+  ensures fib(i) == fib(j)*fib(i-j) + fib(j-1)*fib(i-j-1)
+{
+   j == 1 ? true : gen_fib_lemma(i,j-1) // termination clear: j == 1 direct; all other cases reduce j
+}
+
+// This is just one possible implementation justified by the general lemma above
+// It changes the recursion to step down by a chosen fixed interval "step", rather than just the typical -1 (and -2)
+// It needs a "base case" definition for fib(k) for k in the interval [0..step]
+method gen_fib(i:Int, step:Int) returns (return:Int)
+requires i >= 0 && step > 0
+ensures return == fib(i)
+{
+    if (i <= step) {
+        return := fib(i)
+    } else {
+        var a : Int
+        var b : Int
+        var c : Int
+        var d : Int
+        a := fib(step) // we only need a fib(j) value for [0..j]; all other recursive calls step down in j steps
+        b := gen_fib(i-step,step)
+        c := fib(step-1) // we only need a fib(j) value for [0..j]
+        d := gen_fib(i-step-1,step)
+        assert gen_fib_lemma(i,step) // ghost code; this is only for the proof
+        return := a*b + c*d             
+    }
+}
+
+
+// Rather than a fixed "step", this version halves the step each time
+method halving_fib(i:Int) returns (return:Int)
+requires i >= 0
+ensures return == fib(i)
+{
+    if (i <= 1) {
+        return := 1
+    } else {
+        var a : Int
+        var b : Int
+        var c : Int
+        var d : Int
+        a := halving_fib(i/2)
+        b := halving_fib((i + 1)/2)
+        c := halving_fib(i/2 - 1)
+        d := halving_fib((i + 1)/2 - 1)
+        assert gen_fib_lemma(i,(i+1)/2) // ghost code; this is only for the proof
+        return := a*b + c*d             
+    }
+}
