@@ -25,25 +25,25 @@ entry:
 loop:
     mov eax,esi
     push 10
-    pop ebp
-    push ebp
-    jmp format
+    mov ecx,esp
+    jmp skip
     dw $20 ; e_phentsize
     dw 1 ; e_phnum
+skip:
+    pop ebp
 
 format:
     cdq
     div ebp
     inc ebx
-    dec esp
+    dec ecx
     or edx,'0'
-    mov [esp],dl
+    mov [ecx],dl
     test eax,eax
     jnz format
 
 print:
     mov al,4
-    mov ecx,esp
     mov edx,ebx
     mov bl,1
     int 0x80
