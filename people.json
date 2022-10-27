@@ -479,5 +479,16 @@
 				"link": "./entries/nakilon/fib.rasel"
 			}
 		]
+	},
+	{
+		"github": "kekerr",
+		"name": "Katharine Kerr",
+		"title": "'Whether you think you can or can't, either way you are right.' - Henry Ford",
+		"entries": [
+			{
+				"name": "TypeScript",
+				"link": "./entries/kekerr/fib.ts"
+			}
+		]
 	}
 ]
