@@ -24,7 +24,7 @@ jobs:
                 run: yarn install
             -   name: Check people
                 run: node bin/checkPeople.js ${{ github.actor }}
-            -   name: Prettify code
+            -   name: Prettify people
                 uses: creyD/prettier_action@v4.2
                 with:
                     same_commit: true
