@@ -381,6 +381,10 @@
             {
                 "name": "haskell",
                 "link": "./entries/zgrannan/Fib.hs"
+            },
+            {
+                "name": "human in the loop",
+                "link": "./entries/zgrannan/fib.py"
             }
         ]
     },
