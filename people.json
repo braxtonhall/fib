@@ -256,6 +256,16 @@
 		]
 	},
 	{
+		"name": "Patrice Belleville",
+		"title": "Associate Professor of Teaching, Computer Science, UBC",
+		"entries": [
+			{
+				"name": "fib",
+				"link": "./entries/patricebelleville/fib.py"
+			}
+		]
+	},
+	{
 		"github": "perryliao",
 		"name": "Perry Liao",
 		"title": "BSc, UBC",
@@ -488,6 +498,17 @@
 			{
 				"name": "rb-cr fibonacci",
 				"link": "./entries/komodoooo/"
+      }
+    ]
+  },
+  {
+		"github": "kekerr",
+		"name": "Katharine Kerr",
+		"title": "'Whether you think you can or can't, either way you are right.' - Henry Ford",
+		"entries": [
+			{
+				"name": "TypeScript",
+				"link": "./entries/kekerr/fib.ts"
 			}
 		]
 	}
