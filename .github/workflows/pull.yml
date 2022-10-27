@@ -20,5 +20,7 @@ jobs:
                 uses: actions/setup-node@v1
                 with:
                     node-version: ${{ matrix.node }}
+            -   name: Install packages
+                run: yarn install
             -   name: Check people
                 run: node bin/checkPeople.js ${{ github.actor }}
