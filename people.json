@@ -468,5 +468,16 @@
 				"link": "./entries/nwoeanhinnogaehr/fib.asm"
 			}
 		]
+	},
+	{
+		"github": "Nakilon",
+		"name": "Victor Maslov",
+		"title": "I don't have no titles",
+		"entries": [
+			{
+				"name": "RASEL",
+				"link": "./entries/nakilon/fib.rasel"
+			}
+		]
 	}
 ]
