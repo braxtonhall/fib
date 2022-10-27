@@ -148,7 +148,11 @@
             {
                 "name": "mov",
                 "link": "./entries/lilylin/mov/mov.s"
-            }
+            },
+			{
+				"name": "desmos",
+				"link": "./entries/lilylin/desmos/readme.md"
+			}
         ]
     },
     {
