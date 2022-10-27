@@ -19,6 +19,17 @@
         ]
     },
     {
+        "github": "alexanderjsummers",
+        "name": "Alex Summers",
+        "title": "Associate Professor of Computer Science, UBC",
+        "entries": [
+            {
+                "name": "golden",
+                "link": "./entries/alexanderjsummers/scala/Fib.scala"
+            }
+        ]
+    },
+    {
         "github": "braxtonhall",
         "name": "Braxton Hall",
         "title": "MSc, UBC",
