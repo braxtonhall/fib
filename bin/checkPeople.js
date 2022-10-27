@@ -1,4 +1,37 @@
 const fs = require("fs");
+const Ajv = require("ajv");
+
+const ajv = new Ajv();
+
+const schema = {
+    type: "array",
+    uniqueItems: true,
+    minItems: 1,
+    items: {
+        type: "object",
+        required: ["name", "title", "entries"],
+        properties: {
+            github: {type: "string"},
+            name: {type: "string"},
+            title: {type: "string"},
+            entries: {
+                type: "array",
+                uniqueItems: true,
+                minItems: 1,
+                items: {
+                    type: "object",
+                    required: ["name", "link"],
+                    properties: {
+                        name: {type: "string"},
+                        link: {type: "string"},
+                    },
+                    additionalProperties: false,
+                },
+            },
+        },
+        additionalProperties: false,
+    },
+};
 
 const PEOPLE_PATH = "./people.json";
 
@@ -31,6 +64,12 @@ for (const entry of person.entries) {
     if (!(link.startsWith("http") || fs.existsSync(link))) {
         throw `${link} not found!`;
     }
+}
+
+const validate = ajv.compile(schema);
+if (!validate(people)) {
+    console.error(validate.errors);
+    throw "people.json does not conform to json schema";
 }
 
 console.log("Checked!");

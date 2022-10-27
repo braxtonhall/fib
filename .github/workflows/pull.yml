@@ -15,10 +15,21 @@ jobs:
                 node: [ 16.x ]
 
         steps:
-            -   uses: actions/checkout@v2
+            -   name: Checkout
+                uses: actions/checkout@v2
+                with:
+                    ref: ${{ github.head_ref }}
+                    fetch-depth: 0
             -   name: Install modules with Node ${{ matrix.node }}
                 uses: actions/setup-node@v1
                 with:
                     node-version: ${{ matrix.node }}
+            -   name: Install packages
+                run: yarn install
             -   name: Check people
                 run: node bin/checkPeople.js ${{ github.actor }}
+            -   name: Prettify people
+                uses: creyD/prettier_action@v4.2
+                with:
+                    same_commit: true
+                    prettier_options: --use-tabs --write people.json
