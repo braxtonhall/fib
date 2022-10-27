@@ -1,0 +1,12 @@
+{
+  "name": "fib",
+  "version": "1.0.0",
+  "description": "the fibonacci only you would give me",
+  "main": "index.js",
+  "repository": "git@github.com:braxtonhall/fib.git",
+  "author": "braxtonhall <braxtonjhall@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.11.0"
+  }
+}
