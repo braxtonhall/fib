@@ -256,6 +256,16 @@
 		]
 	},
 	{
+		"name": "Patrice Belleville",
+		"title": "Associate Professor of Teaching, Computer Science, UBC",
+		"entries": [
+			{
+				"name": "fib",
+				"link": "./entries/patricebelleville/fib.py"
+			}
+		]
+	},
+	{
 		"github": "perryliao",
 		"name": "Perry Liao",
 		"title": "BSc, UBC",
