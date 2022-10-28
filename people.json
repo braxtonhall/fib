@@ -421,6 +421,10 @@
 			{
 				"name": "human in the loop",
 				"link": "./entries/zgrannan/fib.py"
+			},
+			{
+				"name": "sleep",
+				"link": "./entries/zgrannan/fib2.py"
 			}
 		]
 	},
