@@ -57,6 +57,17 @@
 		]
 	},
 	{
+		"github": "chameco",
+		"name": "Sam Breese",
+		"title": "professional screen observer",
+		"entries": [
+			{
+				"name": "idiomatic perl5",
+				"link": "./entries/chameco/fib.pl"
+			}
+		]
+	},
+	{
 		"github": "ionathanch",
 		"name": "Jonathan Chan",
 		"title": "MSc, UBC",
