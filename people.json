@@ -484,6 +484,21 @@
 		]
 	},
 	{
+		"github": "nickbradley",
+		"name": "Nick Bradley",
+		"title": "PhD Candidate, UBC",
+		"entries": [
+			{
+				"name": "pre-screen",
+				"link": "./entries/nickbradley/qualtrics"
+			},
+			{
+				"name": "workflow",
+				"link": "./entries/nickbradley/.github/workflows/fib.yml"
+			}
+		]
+	},
+	{
 		"github": "nwoeanhinnogaehr",
 		"name": "Noah Weninger",
 		"title": "PhD Student, UWaterloo",
