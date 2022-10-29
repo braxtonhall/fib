@@ -491,7 +491,7 @@
             },
             {
                 "name": "good-code-bad-code",
-                "link": "./entries/markusde/good-code-bad-code/run.sh"
+                "link": "./entries/markusde/good-code-bad-code/good-code-bad-code.rkt"
             }
 		]
 	},
