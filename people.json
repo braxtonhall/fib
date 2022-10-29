@@ -484,7 +484,11 @@
 			{
 				"name": "collatz",
 				"link": "./entries/markusde/collatz/collatz.png"
-			}
+			},
+            {
+                "name": "james-yoo"
+                "link": "./entries/markusde/james-yoo/run.sh"
+            }
 		]
 	},
 	{
