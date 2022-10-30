@@ -144,6 +144,17 @@
 		]
 	},
 	{
+		"github": "abbaswu",
+		"name": "Jifeng Wu",
+		"title": "MSc Student, UBC",
+		"entries": [
+			{
+				"name": "closures",
+				"link": "./entries/abbaswu/slides/README.md"
+			}
+		]
+	},
+	{
 		"github": "kevindhir",
 		"name": "Kevin Dhir",
 		"title": "BCom, UBC",
