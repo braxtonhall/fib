@@ -553,5 +553,16 @@
 				"link": "./entries/kekerr/fib.ts"
 			}
 		]
+	},
+	{
+		"github": "j-james",
+		"name": "JJ",
+		"title": "BSc, UBC",
+		"entries": [
+			{
+				"name": "nim",
+				"link": "./entries/jj/nim/fib.nim"
+			}
+		]
 	}
 ]
