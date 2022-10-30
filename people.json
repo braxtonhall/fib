@@ -553,5 +553,16 @@
 				"link": "./entries/kekerr/fib.ts"
 			}
 		]
-	}
+	},
+  {
+    "github": "cc-21",
+    "name": "Madonna H",
+    "title": "lazy",
+    "entries": [
+      {
+        "name": "a buggy fib",
+        "link": "./entries/cc-21/fib.java"
+      }
+    ]
+  }
 ]
