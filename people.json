@@ -488,6 +488,10 @@
             {
                 "name": "james-yoo",
                 "link": "./entries/markusde/james-yoo/run.sh"
+            },
+            {
+                "name": "good-code-bad-code",
+                "link": "./entries/markusde/good-code-bad-code/good-code-bad-code.rkt"
             }
 		]
 	},
