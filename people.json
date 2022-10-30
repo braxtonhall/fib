@@ -555,6 +555,17 @@
 		]
 	},
 	{
+		"github": "cc-21",
+		"name": "Madonna H",
+		"title": "lazy",
+		"entries": [
+			{
+				"name": "a buggy fib",
+				"link": "./entries/cc-21/lazy_fib.java"
+			}
+		]
+	},
+	{
 		"github": "j-james",
 		"name": "JJ",
 		"title": "BSc, UBC",
