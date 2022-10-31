@@ -586,5 +586,16 @@
 				"link": "./entries/jj/nim/fib.nim"
 			}
 		]
+	},
+	{
+		"github": "timstr",
+		"name": "Tim Straubinger",
+		"title": "MSc, UBC",
+		"entries": [
+			{
+				"name": "C++ template meta-programming",
+				"link": "./entries/timstr/fib.cpp"
+			}
+		]
 	}
 ]
