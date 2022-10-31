@@ -155,6 +155,17 @@
 		]
 	},
 	{
+		"github": "joeljih",
+		"name": "Joel Jih",
+		"title": "BSc & BEd, UBC",
+		"entries": [
+			{
+				"name": "js",
+				"link": "./entries/joeljih/script.js"
+			}
+		]
+	},
+	{
 		"github": "kevindhir",
 		"name": "Kevin Dhir",
 		"title": "BCom, UBC",
