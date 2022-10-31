@@ -615,7 +615,7 @@
         "title": "BSc, UBC",
         "entries": [
             {
-                "name": "vim",
+                "name": "vimscript",
                 "link": "./entries/joeyshi12/vimscript/fib.vim"
             }
         ]
