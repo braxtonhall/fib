@@ -619,5 +619,20 @@
                 "link": "./entries/joeyshi12/vimscript/fib.vim"
             }
         ]
-    }
+    },
+	{
+		"github": "gerui",
+		"name": "Rui Ge",
+		"title": "PhD Candidate, UBC",
+		"entries": [
+			{
+				"name": "gfib.ml",
+				"link": "./entries/gerui/gfib.ml"
+			},
+			{
+				"name": "fib.pl",
+				"link": "./entries/gerui/fib.pl"
+			}
+		]
+	}
 ]
