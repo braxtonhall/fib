@@ -608,5 +608,16 @@
 				"link": "./entries/timstr/fib.cpp"
 			}
 		]
-	}
+	},
+    {
+        "github": "joeyshi12",
+        "name": "Joey Shi",
+        "title": "BSc, UBC",
+        "entries": [
+            {
+                "name": "vimscript",
+                "link": "./entries/joeyshi12/vimscript/fib.vim"
+            }
+        ]
+    }
 ]
