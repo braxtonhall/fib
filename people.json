@@ -590,11 +590,15 @@
 	{
 		"github": "j-james",
 		"name": "JJ",
-		"title": "BSc, UBC",
+		"title": "BSc Student, UBC",
 		"entries": [
 			{
 				"name": "nim",
 				"link": "./entries/jj/nim/fib.nim"
+			},
+			{
+				"name": "turing machine",
+				"link": "./entries/jj/tm/fib.txt"
 			}
 		]
 	},

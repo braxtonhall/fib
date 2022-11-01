@@ -1,0 +1,213 @@
+The following is a low-level description of a Turing machine that will write
+the Fibonacci sequence (represented in binary, separated by $) without halting.
+
+A Turing machine is a 7-tuple T = (Q,Σ,Γ,δ,qI,qA,qR) where:
+- Q is the set of states; non-empty and finite
+- Σ is the input alphabet; non-empty and finite
+- Γ is the tape alphabet; non-empty and finite
+- δ is the transition function: δ(Q, Γ) -> (Q, Γ, {L, R})
+- qI ∈ Q is the initial state
+- qA ∈ Q is the accept state
+- qR ∈ Q is the reject state
+
+- Q: {
+  sa, sb, sc, sd,
+  aa, ab, ac,
+  aaa, aab, aac, aad, aae, aaf,
+  aba, abb, abc, abd, abe, abf, abg, abh,
+  ba, bb, bc,
+  baa, bab, bac, bad, bae, baf,
+  bba, bbb, bbc, bbd, bbe, bbf,
+  ca, cb, cc, cd, ce, cf, cg, ch, ci
+}
+- Σ: not relevant as we entirely disregard the input to begin with.
+- Γ: {_, $, X, 0, 1, 0*, 1*} (_ means the blank symbol)
+- δ: described below. a note on syntax:
+  - no entry in the output parameter means do not write a character to the tape.
+  - similarly, no entry in the position parameter means do not move the tape head.
+  - numerous "possible" transition functions are not stated. those are thought by the author to be inaccessible in normal operation of this machine (and if they are, it is probably a bug).
+- qI: the initial state is ca.
+- qA: the machine does not accept.
+- qR: the machine does not reject.
+
+Overview:
+1. We clear the tape and write our initial state: the first three Fibonacci numbers
+2. We write a number of Xs to the end of the tape for convenience
+3. We add the last two numbers of the sequence digit-by-digit to create another number
+  - Effort/pain is taken to ensure carrying works: including when the next number is a digit larger
+4. Upon having created the new Fibonacci number, we write a $ and repeat from step 3, ad nauseam
+
+states c*: clearing the initial tape
+- clear the tape: write $0$1$1$, then write _ until reading a _
+
+δ(ca, Γ) -> (cb, $, R)
+δ(cb, Γ) -> (cc, 0, R)
+δ(cc, Γ) -> (cd, $, R)
+δ(cd, Γ) -> (ce, 1, R)
+δ(ce, Γ) -> (cf, $, R)
+δ(cf, Γ) -> (cg, 1, R)
+δ(cg, Γ) -> (ch, $, R)
+δ(ch, Γ \ _) -> (ci, _, R)
+δ(ch, _) -> (sa, , )
+
+
+states s*: making space for the next number
+- from the end: append XX...X where len(XX...X) = len(previous_number)
+
+δ(sa, Γ \ $) -> (sa, , L)
+δ(sa, $) -> (sb, , L)
+
+δ(sb, Γ \ {0,1,$}) -> (sb, , L)
+δ(sb, 0) -> (sc, 0*, R)
+δ(sb, 1) -> (sc, 1*, R)
+δ(sb, $) -> (sd, , R)
+
+δ(sc, Γ \ _) -> (sc, , R)
+δ(sc, _) -> (sa, X, L)
+
+δ(sd, Γ \ {0*,1*,_}) -> (sd, , R)
+δ(sd, 0*) -> (sd, 0, R)
+δ(sd, 1*) -> (sd, 1, R)
+δ(sd, _) -> (aa, , L)
+
+
+states a*: add the last digit of both numbers without carrying
+- read left until $, then read left until:
+  - 0: replace with 0*, goto state (aaa)
+  - 1: replace with 1*, goto state (aba)
+  - $: do not replace, read right until _, write $, goto state (s)
+
+δ(aa, Γ \ $) -> (aa, , L)
+δ(aa, $) -> (ab, , L)
+
+δ(ab, 0) -> (aaa, 0*, L)
+
+δ(ab, 1) -> (aba, 1*, L)
+
+δ(ab, $) -> (ac, , R)
+δ(ac, Γ \ _) -> (ac, , R)
+δ(ac, _) -> (sa, $, R)
+
+states aa*
+- read left until $, then read left until:
+  - 0*: replace with 0, read right until _, then read left until X and replace with 0
+  - 1*: replace with 1, read right until _, then read left until X and replace with 1
+
+δ(aaa, Γ \ $) -> (aaa, , L)
+δ(aaa, $) -> (aab, , L)
+
+δ(aab, 0*) -> (aac, 0, R)
+δ(aac, Γ \ _) -> (aac, , R)
+δ(aac, _) -> (aad, , L)
+δ(aad, Γ \ X) -> (aad, , L)
+δ(aad, X) -> (aba, 0, L)
+
+δ(aab, 1*) -> (aad, 1, R)
+δ(aae, Γ \ _) -> (aae, , R)
+δ(aae, _) -> (aaf, , L)
+δ(aaf, Γ \ X) -> (aaf, , L)
+δ(aaf, X) -> (baa, 1, L)
+
+states ab*
+- read left until $, then read left until:
+  - 0*: replace with 0, read right until _, then read left until X and replace with 1
+  - $: do not replace, read right until _, then read left until X and replace with 1
+  - 1*: replace with 1, read right until _, then read left until X and replace with 0, goto state (b)
+
+δ(aba, Γ \ $) -> (aba, , L)
+δ(aba, $) -> (abb, , L)
+
+δ(abb, 0*) -> (abc, 0, R)
+δ(abc, Γ \ _) -> (abc, , R)
+δ(abc, _) -> (abd, , L)
+δ(abd, Γ \ X) -> (abd, , L)
+δ(abd, X) -> (aa, 1, L)
+
+δ(abb, $) -> (abe, , R)
+δ(abe, Γ \ _) -> (abe, , R)
+δ(abe, _) -> (abf, , L)
+δ(abf, Γ \ X) -> (abf, , L)
+δ(abf, X) -> (aa, 1, L)
+
+δ(abb, 1*) -> (abd, 1, R)
+δ(abg, Γ \ _) -> (abg, , R)
+δ(abg, _) -> (abh, , L)
+δ(abh, Γ \ X) -> (abh, , L)
+δ(abh, X) -> (ba, 0, L)
+
+
+states b*: add the last digit of both numbers while carrying a one
+- read left from end of tape, after reading $, until reading:
+  - 0: replace with 0*, goto state (baa)
+  - 1: replace with 1*, goto state (bba)
+  - $: do not replace, read right until _, goto state (ca)
+
+δ(ba, Γ \ $) -> (ba, , L)
+δ(ba, $) -> (bb, , L)
+
+δ(bb, 0) -> (baa, 0*, L)
+
+δ(bb, 1) -> (bba, 1*, L)
+
+δ(bb, $) -> (bc, , R)
+δ(bc, Γ \ _) -> (bc, , R)
+δ(bc, _) -> (ca, , L)
+
+states ba*
+- read left until $, then read left until:
+  - 0*: replace with 0, read right until _, then read left until X and replace with 1, then goto state (aa)
+  - 1*: replace with 1, read right until _, then read left until X and replace with 0, then goto state (ba)
+
+δ(baa, Γ \ $) -> (baa, , L)
+δ(baa, $) -> (bab, , L)
+
+δ(bab, 0*) -> (bac, 0, R)
+δ(bac, Γ \ _) -> (bac, , R)
+δ(bac, _) -> (bad, , L)
+δ(bad, Γ \ X) -> (bad, , L)
+δ(bad, X) -> (aa, 1, L)
+
+δ(bab, 1*) -> (bad, 1, R)
+δ(bae, Γ \ _) -> (bae, , R)
+δ(bae, _) -> (baf, , L)
+δ(baf, Γ \ X) -> (baf, , L)
+δ(baf, X) -> (ba, 0, L)
+
+states bb*
+- read left until $, then read left until:
+  - 0*: replace with 0, read right until _, then read left until X and replace with 0, goto state (ba)
+  - 1*: replace with 1, read right until _, then read left until X and replace with 1, goto state (ba)
+
+δ(bba, Γ \ $) -> (bba, , L)
+δ(bba, $) -> (bbb, , L)
+
+δ(bbb, 0*) -> (bbc, 0, R)
+δ(bbc, Γ \ _) -> (bbc, , R)
+δ(bbc, _) -> (bbd, , L)
+δ(bbd, Γ \ X) -> (bbd, , L)
+δ(bbd, X) -> (ba, 0, L)
+
+δ(bbb, 1*) -> (bbd, 1, R)
+δ(bbe, Γ \ _) -> (bbe, , R)
+δ(bbe, _) -> (bbf, , L)
+δ(bbf, Γ \ X) -> (bbf, , L)
+δ(bbf, X) -> (ba, 1, L)
+
+
+states c*: scooting over the computed number to make space for a carried digit
+- read left until $, then:
+  - read right, noting the current number and writing the previous number
+  - then go to state (sa)
+
+δ(ca, Γ \ $) -> (ca, , L)
+δ(ca, $) -> (cb, , L)
+
+δ(cb, Γ \ {0,1,_}) -> (cb, , R)
+δ(cb, 0) -> (cc, 1, R)
+δ(cb, 1) -> (cb, 1, R)
+δ(cb, _) -> (sa, 1, R)
+
+δ(cc, Γ \ {0,1,_}) -> (cc, , R)
+δ(cc, 0) -> (cc, 0, R)
+δ(cc, 1) -> (cb, 0, R)
+δ(cc, _) -> (sa, 0, R)
