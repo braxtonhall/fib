@@ -595,6 +595,10 @@
 			{
 				"name": "nim",
 				"link": "./entries/jj/nim/fib.nim"
+			},
+			{
+				"name": "turing machine",
+				"link": "./entries/jj/tm/fib.txt"
 			}
 		]
 	},
