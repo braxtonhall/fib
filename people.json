@@ -94,6 +94,17 @@
 		]
 	},
 	{
+		"github": "fhackett",
+		"name": "Finn Hackett",
+		"title": "PhD Student, UBC",
+		"entries": [
+			{
+				"name": "koka-store",
+				"link": "./entries/fhackett/fib.kk"
+			}
+		]
+	},
+	{
 		"github": "funemy",
 		"name": "Yanze Li",
 		"title": "PhD Student, UBC",
