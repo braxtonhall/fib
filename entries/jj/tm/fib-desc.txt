@@ -11,14 +11,15 @@ A Turing machine is a 7-tuple T = (Q,Σ,Γ,δ,qI,qA,qR) where:
 - qR ∈ Q is the reject state
 
 - Q: {
+  ca, cb, cc, cd, ce, cf, cg, ch, ci,
   sa, sb, sc, sd,
   aa, ab, ac,
   aaa, aab, aac, aad, aae, aaf,
-  aba, abb, abc, abd, abe, abf, abg, abh,
+  aba, abb, abc, abd, abe, abf,
   ba, bb, bc,
   baa, bab, bac, bad, bae, baf,
   bba, bbb, bbc, bbd, bbe, bbf,
-  ca, cb, cc, cd, ce, cf, cg, ch, ci
+  za, zb, zc, zd
 }
 - Σ: not relevant as we entirely disregard the input to begin with.
 - Γ: {_, $, X, 0, 1, 0*, 1*} (_ means the blank symbol)
@@ -43,7 +44,7 @@ states c*: clearing the initial tape
 δ(ca, Γ) -> (cb, $, R)
 δ(cb, Γ) -> (cc, 0, R)
 δ(cc, Γ) -> (cd, $, R)
-δ(cd, Γ) -> (ce, 1, R)
+δ(cd, Γ) -> (ce, 1*, R)
 δ(ce, Γ) -> (cf, $, R)
 δ(cf, Γ) -> (cg, 1, R)
 δ(cg, Γ) -> (ch, $, R)
@@ -80,8 +81,8 @@ states a*: add the last digit of both numbers without carrying
 δ(aa, Γ \ $) -> (aa, , L)
 δ(aa, $) -> (ab, , L)
 
+δ(ab, Γ \ {0,1,$}) -> (ab, , L)
 δ(ab, 0) -> (aaa, 0*, L)
-
 δ(ab, 1) -> (aba, 1*, L)
 
 δ(ab, $) -> (ac, , R)
@@ -100,13 +101,15 @@ states aa*
 δ(aac, Γ \ _) -> (aac, , R)
 δ(aac, _) -> (aad, , L)
 δ(aad, Γ \ X) -> (aad, , L)
-δ(aad, X) -> (aba, 0, L)
+δ(aad, X) -> (aa, 0, L)
 
-δ(aab, 1*) -> (aad, 1, R)
+δ(aab, 1*) -> (aae, 1, R)
 δ(aae, Γ \ _) -> (aae, , R)
 δ(aae, _) -> (aaf, , L)
 δ(aaf, Γ \ X) -> (aaf, , L)
-δ(aaf, X) -> (baa, 1, L)
+δ(aaf, X) -> (aa, 1, L)
+
+δ(aab, Γ \ {0*,1*,$}) -> (aab, , L)
 
 states ab*
 - read left until $, then read left until:
@@ -123,35 +126,33 @@ states ab*
 δ(abd, Γ \ X) -> (abd, , L)
 δ(abd, X) -> (aa, 1, L)
 
-δ(abb, $) -> (abe, , R)
+δ(abb, 1*) -> (abe, 1, R)
 δ(abe, Γ \ _) -> (abe, , R)
 δ(abe, _) -> (abf, , L)
 δ(abf, Γ \ X) -> (abf, , L)
-δ(abf, X) -> (aa, 1, L)
+δ(abf, X) -> (ba, 0, L)
 
-δ(abb, 1*) -> (abd, 1, R)
-δ(abg, Γ \ _) -> (abg, , R)
-δ(abg, _) -> (abh, , L)
-δ(abh, Γ \ X) -> (abh, , L)
-δ(abh, X) -> (ba, 0, L)
+δ(abb, $) -> (abc, , R)
+
+δ(abb, Γ \ {0*,1*,$}) -> (abb, , L)
 
 
 states b*: add the last digit of both numbers while carrying a one
 - read left from end of tape, after reading $, until reading:
   - 0: replace with 0*, goto state (baa)
   - 1: replace with 1*, goto state (bba)
-  - $: do not replace, read right until _, goto state (ca)
+  - $: do not replace, read right until _, goto state (za)
 
 δ(ba, Γ \ $) -> (ba, , L)
 δ(ba, $) -> (bb, , L)
 
+δ(bb, Γ \ {0,1,$}) -> (bb, , L)
 δ(bb, 0) -> (baa, 0*, L)
-
 δ(bb, 1) -> (bba, 1*, L)
 
 δ(bb, $) -> (bc, , R)
 δ(bc, Γ \ _) -> (bc, , R)
-δ(bc, _) -> (ca, , L)
+δ(bc, _) -> (za, , L)
 
 states ba*
 - read left until $, then read left until:
@@ -167,11 +168,13 @@ states ba*
 δ(bad, Γ \ X) -> (bad, , L)
 δ(bad, X) -> (aa, 1, L)
 
-δ(bab, 1*) -> (bad, 1, R)
+δ(bab, 1*) -> (bae, 1, R)
 δ(bae, Γ \ _) -> (bae, , R)
 δ(bae, _) -> (baf, , L)
 δ(baf, Γ \ X) -> (baf, , L)
 δ(baf, X) -> (ba, 0, L)
+
+δ(bab, Γ \ {0*,1*,$}) -> (bab, , L)
 
 states bb*
 - read left until $, then read left until:
@@ -187,27 +190,32 @@ states bb*
 δ(bbd, Γ \ X) -> (bbd, , L)
 δ(bbd, X) -> (ba, 0, L)
 
-δ(bbb, 1*) -> (bbd, 1, R)
+δ(bbb, 1*) -> (bbe, 1, R)
 δ(bbe, Γ \ _) -> (bbe, , R)
 δ(bbe, _) -> (bbf, , L)
 δ(bbf, Γ \ X) -> (bbf, , L)
 δ(bbf, X) -> (ba, 1, L)
 
+δ(bbb, $) -> (bbc, , R)
+
+δ(bbb, Γ \ {0*,1*,$}) -> (bbb, , L)
 
 states c*: scooting over the computed number to make space for a carried digit
 - read left until $, then:
   - read right, noting the current number and writing the previous number
   - then go to state (sa)
 
-δ(ca, Γ \ $) -> (ca, , L)
-δ(ca, $) -> (cb, , L)
+δ(za, Γ \ $) -> (za, , L)
+δ(za, $) -> (zb, , R)
 
-δ(cb, Γ \ {0,1,_}) -> (cb, , R)
-δ(cb, 0) -> (cc, 1, R)
-δ(cb, 1) -> (cb, 1, R)
-δ(cb, _) -> (sa, 1, R)
+δ(zb, Γ \ {0,1,_}) -> (zb, , R)
+δ(zb, 0) -> (zc, 1, R)
+δ(zb, 1) -> (zb, 1, R)
+δ(zb, _) -> (zd, 1, R)
 
-δ(cc, Γ \ {0,1,_}) -> (cc, , R)
-δ(cc, 0) -> (cc, 0, R)
-δ(cc, 1) -> (cb, 0, R)
-δ(cc, _) -> (sa, 0, R)
+δ(zc, Γ \ {0,1,_}) -> (zc, , R)
+δ(zc, 0) -> (zc, 0, R)
+δ(zc, 1) -> (zb, 0, R)
+δ(zc, _) -> (zd, 0, R)
+
+δ(zd, _) -> (sa, $, R)
