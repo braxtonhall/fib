@@ -55,10 +55,10 @@ states c*: clearing the initial tape
 states s*: making space for the next number
 - from the end: append XX...X where len(XX...X) = len(previous_number)
 
-δ(sa, Γ \ $) -> (sa, , L)
+δ(sa, {_,X}) -> (sa, , L)
 δ(sa, $) -> (sb, , L)
 
-δ(sb, Γ \ {0,1,$}) -> (sb, , L)
+δ(sb, {0*,1*}) -> (sb, , L)
 δ(sb, 0) -> (sc, 0*, R)
 δ(sb, 1) -> (sc, 1*, R)
 δ(sb, $) -> (sd, , R)
@@ -66,7 +66,7 @@ states s*: making space for the next number
 δ(sc, Γ \ _) -> (sc, , R)
 δ(sc, _) -> (sa, X, L)
 
-δ(sd, Γ \ {0*,1*,_}) -> (sd, , R)
+δ(sd, {$,X}) -> (sd, , R)
 δ(sd, 0*) -> (sd, 0, R)
 δ(sd, 1*) -> (sd, 1, R)
 δ(sd, _) -> (aa, , L)
@@ -78,10 +78,10 @@ states a*: add the last digit of both numbers without carrying
   - 1: replace with 1*, goto state (aba)
   - $: do not replace, read right until _, write $, goto state (s)
 
-δ(aa, Γ \ $) -> (aa, , L)
+δ(aa, {X,0,1}) -> (aa, , L)
 δ(aa, $) -> (ab, , L)
 
-δ(ab, Γ \ {0,1,$}) -> (ab, , L)
+δ(ab, {0*,1*}) -> (ab, , L)
 δ(ab, 0) -> (aaa, 0*, L)
 δ(ab, 1) -> (aba, 1*, L)
 
@@ -94,22 +94,22 @@ states aa*
   - 0*: replace with 0, read right until _, then read left until X and replace with 0
   - 1*: replace with 1, read right until _, then read left until X and replace with 1
 
-δ(aaa, Γ \ $) -> (aaa, , L)
+δ(aaa, {0,1}) -> (aaa, , L)
 δ(aaa, $) -> (aab, , L)
 
 δ(aab, 0*) -> (aac, 0, R)
 δ(aac, Γ \ _) -> (aac, , R)
 δ(aac, _) -> (aad, , L)
-δ(aad, Γ \ X) -> (aad, , L)
+δ(aad, {0,1}) -> (aad, , L)
 δ(aad, X) -> (aa, 0, L)
 
 δ(aab, 1*) -> (aae, 1, R)
 δ(aae, Γ \ _) -> (aae, , R)
 δ(aae, _) -> (aaf, , L)
-δ(aaf, Γ \ X) -> (aaf, , L)
+δ(aaf, {0,1}) -> (aaf, , L)
 δ(aaf, X) -> (aa, 1, L)
 
-δ(aab, Γ \ {0*,1*,$}) -> (aab, , L)
+δ(aab, {0,1}) -> (aab, , L)
 
 states ab*
 - read left until $, then read left until:
@@ -117,24 +117,24 @@ states ab*
   - $: do not replace, read right until _, then read left until X and replace with 1
   - 1*: replace with 1, read right until _, then read left until X and replace with 0, goto state (b)
 
-δ(aba, Γ \ $) -> (aba, , L)
+δ(aba, {0,1}) -> (aba, , L)
 δ(aba, $) -> (abb, , L)
 
 δ(abb, 0*) -> (abc, 0, R)
 δ(abc, Γ \ _) -> (abc, , R)
 δ(abc, _) -> (abd, , L)
-δ(abd, Γ \ X) -> (abd, , L)
+δ(abd, {0,1}) -> (abd, , L)
 δ(abd, X) -> (aa, 1, L)
 
 δ(abb, 1*) -> (abe, 1, R)
 δ(abe, Γ \ _) -> (abe, , R)
 δ(abe, _) -> (abf, , L)
-δ(abf, Γ \ X) -> (abf, , L)
+δ(abf, {0,1}) -> (abf, , L)
 δ(abf, X) -> (ba, 0, L)
 
 δ(abb, $) -> (abc, , R)
 
-δ(abb, Γ \ {0*,1*,$}) -> (abb, , L)
+δ(abb, {0,1}) -> (abb, , L)
 
 
 states b*: add the last digit of both numbers while carrying a one
@@ -143,10 +143,10 @@ states b*: add the last digit of both numbers while carrying a one
   - 1: replace with 1*, goto state (bba)
   - $: do not replace, read right until _, goto state (za)
 
-δ(ba, Γ \ $) -> (ba, , L)
+δ(ba, {X,0,1}) -> (ba, , L)
 δ(ba, $) -> (bb, , L)
 
-δ(bb, Γ \ {0,1,$}) -> (bb, , L)
+δ(bb, {0*,1*}) -> (bb, , L)
 δ(bb, 0) -> (baa, 0*, L)
 δ(bb, 1) -> (bba, 1*, L)
 
@@ -159,61 +159,59 @@ states ba*
   - 0*: replace with 0, read right until _, then read left until X and replace with 1, then goto state (aa)
   - 1*: replace with 1, read right until _, then read left until X and replace with 0, then goto state (ba)
 
-δ(baa, Γ \ $) -> (baa, , L)
+δ(baa, {0,1}) -> (baa, , L)
 δ(baa, $) -> (bab, , L)
 
 δ(bab, 0*) -> (bac, 0, R)
 δ(bac, Γ \ _) -> (bac, , R)
 δ(bac, _) -> (bad, , L)
-δ(bad, Γ \ X) -> (bad, , L)
+δ(bad, {0,1}) -> (bad, , L)
 δ(bad, X) -> (aa, 1, L)
 
 δ(bab, 1*) -> (bae, 1, R)
 δ(bae, Γ \ _) -> (bae, , R)
 δ(bae, _) -> (baf, , L)
-δ(baf, Γ \ X) -> (baf, , L)
+δ(baf, {0,1}) -> (baf, , L)
 δ(baf, X) -> (ba, 0, L)
 
-δ(bab, Γ \ {0*,1*,$}) -> (bab, , L)
+δ(bab, {0,1}) -> (bab, , L)
 
 states bb*
 - read left until $, then read left until:
   - 0*: replace with 0, read right until _, then read left until X and replace with 0, goto state (ba)
   - 1*: replace with 1, read right until _, then read left until X and replace with 1, goto state (ba)
 
-δ(bba, Γ \ $) -> (bba, , L)
+δ(bba, {0,1}) -> (bba, , L)
 δ(bba, $) -> (bbb, , L)
 
 δ(bbb, 0*) -> (bbc, 0, R)
 δ(bbc, Γ \ _) -> (bbc, , R)
 δ(bbc, _) -> (bbd, , L)
-δ(bbd, Γ \ X) -> (bbd, , L)
+δ(bbd, {0,1}) -> (bbd, , L)
 δ(bbd, X) -> (ba, 0, L)
 
 δ(bbb, 1*) -> (bbe, 1, R)
 δ(bbe, Γ \ _) -> (bbe, , R)
 δ(bbe, _) -> (bbf, , L)
-δ(bbf, Γ \ X) -> (bbf, , L)
+δ(bbf, {0,1}) -> (bbf, , L)
 δ(bbf, X) -> (ba, 1, L)
 
 δ(bbb, $) -> (bbc, , R)
 
-δ(bbb, Γ \ {0*,1*,$}) -> (bbb, , L)
+δ(bbb, {0,1}) -> (bbb, , L)
 
 states c*: scooting over the computed number to make space for a carried digit
 - read left until $, then:
   - read right, noting the current number and writing the previous number
   - then go to state (sa)
 
-δ(za, Γ \ $) -> (za, , L)
+δ(za, {0,1}) -> (za, , L)
 δ(za, $) -> (zb, , R)
 
-δ(zb, Γ \ {0,1,_}) -> (zb, , R)
 δ(zb, 0) -> (zc, 1, R)
 δ(zb, 1) -> (zb, 1, R)
 δ(zb, _) -> (zd, 1, R)
 
-δ(zc, Γ \ {0,1,_}) -> (zc, , R)
 δ(zc, 0) -> (zc, 0, R)
 δ(zc, 1) -> (zb, 0, R)
 δ(zc, _) -> (zd, 0, R)
