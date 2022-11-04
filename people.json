@@ -610,6 +610,10 @@
 			{
 				"name": "turing machine",
 				"link": "./entries/jj/tm/fib.txt"
+			},
+			{
+				"name": "wang tiling",
+				"link": "./entries/jj/tiles/fib.png"
 			}
 		]
 	},
