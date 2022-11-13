@@ -653,5 +653,16 @@
 				"link": "./entries/gerui/fib.pl"
 			}
 		]
+	},
+	{
+		"github": "s-lando",
+		"name": "Sam Lando",
+		"title": "BA, UBC",
+		"entries": [
+			{
+				"name": "elixir",
+				"link": "./entries/s-lando/fib.ex"
+			}
+		]
 	}
 ]
