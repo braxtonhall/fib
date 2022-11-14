@@ -674,5 +674,16 @@
 				"link": "./entries/s-lando/fib.ex"
 			}
 		]
+	},
+	{
+		"github": "themaskedtaquito",
+		"name": "Mari Allison",
+		"title": "MASLIS, UBC",
+		"entries": [
+			{
+				"name": "color",
+				"link": "./entries/Mari/fib.js"
+			}
+		]
 	}
 ]
