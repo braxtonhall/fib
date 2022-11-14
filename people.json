@@ -573,10 +573,20 @@
 			{
 				"name": "rb-cr fibonacci",
 				"link": "./entries/komodoooo/"
-      }
-    ]
-  },
-  {
+			}
+		]
+	},
+	{
+		"name": "Simon Grefiel",
+		"title": "Shipwright",
+		"entries": [
+			{
+				"name": "Furu Ester",
+				"link": "./entries/sai/dall-e"
+			}
+		]
+	},
+	{
 		"github": "kekerr",
 		"name": "Katharine Kerr",
 		"title": "'Whether you think you can or can't, either way you are right.' - Henry Ford",
