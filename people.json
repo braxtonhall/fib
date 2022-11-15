@@ -674,5 +674,16 @@
 				"link": "./entries/s-lando/fib.ex"
 			}
 		]
+	},
+	{
+		"github": "skairunner",
+		"name": "Skye Im",
+		"title": "Software Engineer",
+		"entries": [
+			{
+				"name": "protobuf with rust",
+				"link": "./entries/skairunner/src/main.rs"
+			}
+		]
 	}
 ]
