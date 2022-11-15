@@ -16,6 +16,7 @@ fn field_number_is_illegal(n: i32) -> bool {
     19000 <= n && n <= 19999 || n <= 0
 }
 
+/// Create a valid memo object initialized with f(0) and f(1)
 fn init_memo() -> HashMap<i32, i32> {
     let mut memo = HashMap::new();
     memo.insert(0, 0);
@@ -23,6 +24,8 @@ fn init_memo() -> HashMap<i32, i32> {
     memo
 }
 
+/// Generate the fibonacci sequence number of f(n),
+/// referencing the memo and updating it if needed.
 fn fib(n: i32, memo: &mut HashMap<i32, i32>) -> Option<i32> {
     if let Some(number) = memo.get(&n) {
         return Some(*number);
@@ -33,6 +36,7 @@ fn fib(n: i32, memo: &mut HashMap<i32, i32>) -> Option<i32> {
     Some(f_n)
 }
 
+/// Format prev and prevprev
 fn format_submessage(n: i32, memo: &mut HashMap<i32, i32>, name: &str) -> String {
     let number = fib(n, memo);
     match number {
@@ -47,6 +51,7 @@ fn format_submessage(n: i32, memo: &mut HashMap<i32, i32>, name: &str) -> String
     }
 }
 
+/// Generate a Fibonacci message.
 fn message_frame(n: i32, memo: &mut HashMap<i32, i32>) -> String {
     let n_0 = fib(n, memo)
         .map(|number| {
