@@ -676,6 +676,7 @@
 		]
 	},
 	{
+
 		"github": "themaskedtaquito",
 		"name": "Mari Allison",
 		"title": "MASLIS, UBC",
@@ -683,6 +684,17 @@
 			{
 				"name": "color",
 				"link": "./entries/themaskedtaquito/fib.js"
+			}
+		]
+	},
+  {
+		"github": "skairunner",
+		"name": "Skye Im",
+		"title": "Software Engineer",
+		"entries": [
+			{
+				"name": "protobuf with rust",
+				"link": "./entries/skairunner/src/main.rs"
 			}
 		]
 	}
