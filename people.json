@@ -151,6 +151,10 @@
 			{
 				"name": "aspectj",
 				"link": "./entries/jyoo980/aspectj/Fibonacci.aj"
+			},
+			{
+				"name": "requirements-document",
+				"link": "./entries/jyoo980/requirements/requirements.pdf"
 			}
 		]
 	},
