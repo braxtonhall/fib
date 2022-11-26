@@ -53,6 +53,10 @@
 			{
 				"name": "wc",
 				"link": "./entries/braxtonhall/wc/fib.sh"
+			},
+			{
+				"name": "hitl2",
+				"link": "./entries/braxtohall/hitl2/fib.js"
 			}
 		]
 	},
