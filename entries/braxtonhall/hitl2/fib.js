@@ -123,6 +123,13 @@ const hitlfib = (n) =>
 		.then((map) => Promise.resolve(build(n, map))
 			.then((top) => fill(map, top)));
 
+const hitlfibiter = (n, a = 0, b = 1) =>
+	n === 0
+		? Promise.resolve(a)
+		: n === 1
+			? Promise.resolve(b)
+			: add(a, b).then((result) => hitlfibiter(n - 1, b, result));
+
 const number = () =>
 	prompt("give me a number")
 		.then((str) => str.trim())
@@ -131,6 +138,12 @@ const number = () =>
 				? n
 				: slow(hedge()).then(() => slow(innumerable())).then(number)));
 
+const choose = () =>
+	prompt("would you like to use my iteration optimization??? yes????")
+		.then((response) => ["y", "yes"].includes(response.trim().toLowerCase()))
+		.then((should) => should
+			? fast("yes!").then(() => hitlfibiter)
+			: fast("oh.").then(() => slow("okay.")).then(() => slow("we can take it slow.")).then(() => hitlfib));
 
 const flow = () =>
 	slow("\nwhat's the fib you'd like to compute? i can help u out")
@@ -138,7 +151,8 @@ const flow = () =>
 		.then((n) => slow(confirmation())
 			.then(() => fast(hedge()))
 			.then(() => slow(`i will help u compute ${green(`fib ${n}`)}`))
-			.then(() => hitlfib(n))
+			.then(choose)
+			.then((fib) => fib(n))
 			.then((fibn) => slow(hedge())
 				.then(() => fast(done()))
 				.then(() => fast(thinking()))
