@@ -29,6 +29,12 @@ const hedges = [
 	"um. okay.",
 	"uh okay..",
 	"so..",
+	"yeah...",
+	"yes. so. um..",
+	"okay. so. um..",
+	"yeah. right. next..",
+	"uh so. right. next..",
+	"next. right. okay..",
 ];
 const confirmations = [
 	"o right. ofc.",
@@ -37,6 +43,18 @@ const confirmations = [
 	"thanks.",
 	"um right. yes.",
 	"right.",
+	"exactly. thanks.",
+	"yes. thank u.",
+	"right. um thank u.",
+	"right. uh thanks.",
+	"great.",
+	"great. um thanks..",
+	"right right. cool.",
+	"cool. cool thank you.",
+	"cool.",
+	"cool. cool cool. thanks..",
+	"okay yes. cool..",
+	"right thank you. okay..",
 ];
 const innumerables = [
 	"yeah i don't think we can do that one",
@@ -56,6 +74,9 @@ const dones = [
 	"oh!",
 	"wait you did it all.",
 	"oh that's it?",
+	"ah! yes!",
+	"ah! yes! we're done!",
+	"oh! yes! that's it!",
 ];
 const thinkings = [
 	"let me just think a second..",
