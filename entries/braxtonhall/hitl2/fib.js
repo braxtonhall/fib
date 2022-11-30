@@ -139,11 +139,24 @@ const number = () =>
 				: slow(hedge()).then(() => slow(innumerable())).then(number)));
 
 const choose = () =>
-	prompt("would you like to use my iteration optimization??? yes????")
-		.then((response) => ["y", "yes"].includes(response.trim().toLowerCase()))
-		.then((should) => should
-			? fast("yes!").then(() => hitlfibiter)
-			: fast("oh.").then(() => slow("okay.")).then(() => slow("we can take it slow.")).then(() => hitlfib));
+	prompt("would you like to use my iteration optimization??? yes???? .. or.. no?")
+		.then((response) => Promise.resolve(["yes", "no", "y", "n"].includes(response.trim().toLowerCase()))
+			.then((formed) => !formed
+				? slow("um. sorry. one more time..").then(choose)
+				: ["yes", "y"].includes(response.trim().toLowerCase())
+					? fast("yes!").then(() => hitlfibiter)
+					: fast("oh.").then(() => slow("okay.")).then(() => slow("we can take it slow.")).then(() => hitlfib)));
+
+const optimize = (n) =>
+	n < 4
+		? hitlfib
+		: n > 25 
+			? slow(hedge())
+				.then(() => fast("acutally.."))
+				.then(() => fast("i need to use my iteration optimization for this."))
+				.then(() => slow("i hope that's okay."))
+				.then(() => hitlfibiter)
+			: choose();
 
 const flow = () =>
 	slow("\nwhat's the fib you'd like to compute? i can help u out")
@@ -151,7 +164,7 @@ const flow = () =>
 		.then((n) => slow(confirmation())
 			.then(() => fast(hedge()))
 			.then(() => slow(`i will help u compute ${green(`fib ${n}`)}`))
-			.then(choose)
+			.then(() => optimize(n))
 			.then((fib) => fib(n))
 			.then((fibn) => slow(hedge())
 				.then(() => fast(done()))
