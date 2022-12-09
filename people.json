@@ -705,5 +705,16 @@
 				"link": "./entries/skairunner/src/main.rs"
 			}
 		]
+	},
+	  {
+		"github": "ardier",
+		"name": "Ardi Madadi",
+		"title": "Graduate Student",
+		"entries": [
+			{
+				"name": "One-liners in Python",
+				"link": "./entries/ardier/python/main.py"
+			}
+		]
 	}
 ]
