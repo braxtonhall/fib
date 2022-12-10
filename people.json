@@ -714,7 +714,12 @@
 			{
 				"name": "One-liners in Python",
 				"link": "./entries/ardier/python/main.py"
+			},
+			{
+				"name": "One-liners in Java",
+				"link": "./entries/ardier/java/Main.java"
 			}
+
 		]
 	}
 ]
