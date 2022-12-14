@@ -48,7 +48,7 @@
 
     <a href="https://github.com/braxtonhall/fib#contributing"><span>Want to contribute?</span></a>
 <script>
-    const getContributors = _ => fetch(`/fib/people.json`).then(res => res.json());
+    const getContributors = _ => fetch(`/people.json`).then(res => res.json());
 
     const toPersonNode = person => $("<div>", {class: "person"}).append(
         toPersonHeader(person),
