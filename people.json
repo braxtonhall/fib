@@ -722,6 +722,17 @@
 
 		]
 	},
+  {
+	  "github": "vivkpatl",
+		"name": "Vivek Patel",
+		"title": "Impostor Syndrome",
+		"entries": [
+			{
+				"name": "gofib",
+				"link": "./entries/vivkpatl/gofib.go"
+      }
+    ]
+  },
 	{
 		"github": "williamvietnguyen",
 		"name": "William Nguyen",
