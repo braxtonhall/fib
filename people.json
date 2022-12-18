@@ -722,14 +722,25 @@
 
 		]
 	},
-    {
-		"github": "vivkpatl",
+  {
+	  "github": "vivkpatl",
 		"name": "Vivek Patel",
 		"title": "Impostor Syndrome",
 		"entries": [
 			{
 				"name": "gofib",
 				"link": "./entries/vivkpatl/gofib.go"
+      }
+    ]
+  },
+	{
+		"github": "williamvietnguyen",
+		"name": "William Nguyen",
+		"title": "Software Engineer, Bloomberg LP",
+		"entries": [
+			{
+				"name": "fibberoni",
+				"link": "./entries/williamvietnguyen/fibberoni.c"
 			}
 		]
 	}
