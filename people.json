@@ -721,5 +721,16 @@
 			}
 
 		]
+	},
+	{
+		"github": "williamvietnguyen",
+		"name": "William Nguyen",
+		"title": "Software Engineer, Bloomberg LP",
+		"entries": [
+			{
+				"name": "fibberoni",
+				"link": "./entries/williamvietnguyen/fibberoni.c"
+			}
+		]
 	}
 ]
