@@ -743,5 +743,16 @@
 				"link": "./entries/williamvietnguyen/fibberoni.c"
 			}
 		]
-	}
+	},
+	  {
+		"github": "jjhickmon",
+		"name": "Javon Hickmon",
+		"title": "Undergraduate CS Student, UW",
+		"entries": [
+			{
+				"name": "fibonacci",
+				"link": "./entries/jjhickmon/fibonacci.py"
+			}
+		]
+	},
 ]
