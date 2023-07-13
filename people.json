@@ -623,15 +623,15 @@
 		"entries": [
 			{
 				"name": "nim",
-				"link": "./entries/jj/nim/fib.nim"
+				"link": "./entries/omentic/nim/fib.nim"
 			},
 			{
 				"name": "turing machine",
-				"link": "./entries/jj/tm/fib.txt"
+				"link": "./entries/omentic/tm/fib.txt"
 			},
 			{
 				"name": "wang tiling",
-				"link": "./entries/jj/tiles/fib.png"
+				"link": "./entries/omentic/tiles/fib.png"
 			}
 		]
 	},
